@@ -1,0 +1,11 @@
+VERIFICACIÓN RÁPIDA
+
+1. Descomprime este ZIP.
+2. Sube LOS ARCHIVOS EXTRAÍDOS, no el ZIP.
+3. En la raíz del repositorio deben quedar:
+   - .nojekyll
+   - index.html
+   - robots.txt
+   - assets/
+4. El index.html correcto pesa aproximadamente 70 KB y comienza con <!DOCTYPE html>.
+5. En Settings > Pages selecciona main y /(root).
