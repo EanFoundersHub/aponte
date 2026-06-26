@@ -1,28 +1,8 @@
-# David Aponte — paquete de contenido y assets reales
-
-Este paquete corrige el starter provisional anterior. Aquí no hay imágenes genéricas ni textos marcados como “REEMPLAZAR”.
-
-## Contenido
-
-- `assets/home/`: retrato, íconos, fotografías de servicios y testimonios usados por la home.
-- `assets/course/`: fotografías reales del curso y recursos visuales de sus cuatro módulos.
-- `content/TEXTOS_HOME_REALES.md`: contenido visible de la página principal.
-- `content/TEXTOS_CURSO_REALES.md`: contenido visible de la página del curso.
-- `manifests/ASSETS_REALES.csv`: archivo local, URL original, dimensiones, peso y SHA-256.
-- `manifests/ASSETS_REALES.json`: el mismo inventario en JSON.
-- `manifests/VIDEOS_REALES.csv`: IDs y enlaces de los dos videos incrustados detectados en la home.
-- `manifests/FUENTES_ORIGEN.md`: URLs de las páginas fuente.
-- `PROMPT_ADAPTACION_NOVAIRE_CON_CONTENIDO_REAL.md`: instrucciones definitivas para adaptar las secciones reales al modelo visual de Novaire.
-
-## Fuente de verdad
-
-Los textos y recursos de este ZIP definen el contenido de la nueva landing. La referencia Novaire solo define el tratamiento visual, la retícula, las animaciones y el acabado.
-
-## Videos
-
-- https://www.youtube.com/watch?v=k-MkzhIgFM8
-- https://www.youtube.com/watch?v=xAX6_tqWcs0
-
-## Observación técnica
-
-Este paquete reúne los recursos reales recuperados del sitio público y los IDs de video detectados en la extracción previa. No contiene el starter genérico entregado anteriormente.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.davidaponte.com/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

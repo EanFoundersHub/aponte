@@ -1,15 +1,10 @@
-# Fuentes de origen
+# Validación técnica
 
-- Página principal: https://www.davidaponte.com/
-- Curso Transformación Financiera: https://www.davidaponte.com/curso-transformacion-financiera/
-- Acompañamiento personalizado: https://landingpage.davidaponte.com/
-- Página de información/CTA del curso: https://finanzas.davidaponte.com/
-
-## Videos incrustados detectados previamente en el HTML de la home
-
-- https://www.youtube.com/watch?v=k-MkzhIgFM8
-- https://www.youtube.com/watch?v=xAX6_tqWcs0
-
-## Criterio
-
-Los textos de las carpetas `content/` conservan el contenido visible del sitio. Las imágenes de `assets/` proceden de las rutas reales de `wp-content/uploads` usadas por el sitio. No son imágenes genéricas ni marcadores provisionales.
+- JavaScript validado con `node --check`.
+- Todas las rutas locales de imágenes, CSS y JavaScript fueron verificadas.
+- Se confirmó la presencia de los textos, cifras, testimonios, servicios, módulos y datos de contacto obligatorios.
+- Se probó el diseño en vistas de 1440 × 1000 px y 390 × 844 px.
+- No se detectó desplazamiento horizontal en escritorio ni móvil.
+- Se probó la apertura del menú móvil.
+- Se probó el cambio interactivo de imágenes en la sección de servicios.
+- Las escenas de scroll no usan blur, escalas agresivas ni un bucle permanente de animación.
