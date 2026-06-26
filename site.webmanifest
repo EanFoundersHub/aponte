@@ -1,0 +1,243 @@
+# PROMPT DEFINITIVO — ADAPTAR DAVID APONTE AL MODELO VISUAL DE NOVAIRE
+
+Actúa como director de arte digital, diseñador UX/UI y desarrollador front-end senior.
+
+Voy a adjuntar el ZIP `David_Aponte_Assets_Reales.zip`. Ese ZIP contiene el contenido real que debe utilizarse para reconstruir la landing de David Aponte:
+
+- Fotografías e imágenes reales en `assets/`.
+- Textos reales de la página actual en `content/`.
+- URLs originales, dimensiones y hashes de los assets en `manifests/ASSETS_REALES.csv` y `manifests/ASSETS_REALES.json`.
+- Enlaces e IDs reales de los videos de YouTube en `manifests/VIDEOS_REALES.csv`.
+- Fuentes web y enlaces de origen en `manifests/FUENTES_ORIGEN.md`.
+
+La referencia visual es:
+
+https://novaire.framer.website/
+
+## Regla central
+
+**El ZIP define qué se comunica y qué recursos se usan. Novaire define únicamente cómo se organiza, se anima y se presenta visualmente.**
+
+No inventes contenido. No reemplaces las fotografías. No escribas una nueva propuesta de valor. No agregues servicios, cifras, clientes, testimonios o resultados que no estén incluidos en el ZIP.
+
+## 1. Uso obligatorio del contenido
+
+1. Lee primero `content/TEXTOS_HOME_REALES.md`.
+2. Lee después `content/TEXTOS_CURSO_REALES.md`.
+3. Conserva literalmente los nombres, cifras, servicios, testimonios, CTA, datos de contacto y afirmaciones allí incluidos.
+4. Puedes corregir únicamente errores evidentes de mayúsculas, tildes o puntuación, pero no cambies el sentido ni reescribas el contenido.
+5. Usa las imágenes locales del ZIP. No sustituyas el retrato de David, las fotografías de talleres, conferencias, mentorías, módulos o testimonios por bancos de imágenes ni por imágenes generadas con IA.
+6. Usa los dos videos reales indicados en `manifests/VIDEOS_REALES.csv`:
+   - `k-MkzhIgFM8`
+   - `xAX6_tqWcs0`
+7. Los videos pueden mostrarse como embeds responsivos, tarjetas con miniatura o modal. No cambies sus IDs.
+
+## 2. Correspondencia de secciones
+
+Adapta las secciones reales de David al lenguaje visual de Novaire de esta manera:
+
+### Hero
+
+Contenido real:
+
+- david aponte
+- conferencista y coach en finanzas
+- personales y corporativas
+- CTA: ver conferencias
+- Etiqueta: Mentor
+
+Recurso principal:
+
+`assets/home/david-aponte-retrato-principal.png`
+
+Comportamiento inspirado en Novaire:
+
+- Nombre de gran formato.
+- Retrato recortado sobre composición editorial.
+- Entrada escalonada del nombre, rol, CTA y retrato.
+- Navegación flotante.
+- Indicador de scroll.
+
+No reemplaces el hero por una frase nueva.
+
+### Presentación de David
+
+Usa el bloque real que inicia con:
+
+“Si tu estabilidad depende de un sueldo fijo y crees que invertir es un riesgo...”
+
+Distribúyelo como manifiesto editorial con revelado por líneas y bloques cortos. No lo resumas ni lo sustituyas por un texto corporativo genérico.
+
+### Roles y credenciales
+
+Presenta:
+
+- Empresario — CEO FINANCIAL-LAB
+- Inversionista
+- Conferencista — Finanzas Personales y Corporativas
+- mentor — Universidad Javeriana
+- Columnista — Diario Portafolio
+
+Usa los cinco íconos reales de `assets/home/`.
+
+### Enfoque hacia la libertad financiera
+
+Usa los cuatro bloques reales:
+
+- Enfoque estratégico hacia la libertad financiera.
+- Experiencia y conocimiento práctico.
+- Estrategias comprobadas y aplicables.
+- Transformación de dilemas Financieros en Soluciones.
+
+Puede convertirse en una sección sticky similar a los casos de estudio de Novaire, con cada bloque activándose durante el scroll.
+
+### Servicios
+
+Usa exactamente estos servicios:
+
+- Talleres interactivos.
+- Conferencias corporativas.
+- Mentoría financiera.
+
+Usa estas imágenes reales:
+
+- `assets/home/talleres-interactivos.png`
+- `assets/home/conferencias-corporativas.png`
+- `assets/home/mentoria-financiera.png`
+
+En escritorio puede cambiar la imagen al pasar el cursor o al activar cada fila. En móvil debe verse como tarjetas verticales, sin depender de hover.
+
+### Curso Transformación Financiera
+
+Integra la información real del curso:
+
+- Público objetivo.
+- Definición de metas.
+- Diagnóstico financiero personal.
+- Seguimiento personalizado.
+- Cuatro sesiones.
+- Valor de $3.300.000 COP.
+- Garantía y beneficios indicados en el texto fuente.
+
+Usa las seis fotografías reales de `assets/course/curso-foto-01.jpg` a `curso-foto-06.jpg` y los cuatro recursos de módulos:
+
+- `modulo-mentalidad-riqueza.png`
+- `modulo-gestion-deudas.png`
+- `modulo-estilo-de-vida.png`
+- `modulo-portafolio-inversiones.png`
+
+No inventes un precio diferente, descuentos, número de cupos ni bonos.
+
+### Videos
+
+Crea una sección de contenido audiovisual con los videos reales del manifiesto. No uses videos de muestra.
+
+### Testimonios
+
+Usa los cinco testimonios reales y sus imágenes correspondientes:
+
+- Jennifer Bermúdez.
+- Cámara de Comercio del Casanare / Deiby Cruz.
+- Franklin Barrera.
+- Reinaldo Acosta.
+- María del Pilar.
+
+No fabriques testimonios ni cambies la identidad de las personas.
+
+### Contacto y cierre
+
+Conserva:
+
+- Bogotá, Colombia.
+- Celular: 323 840 2062.
+- Correo: finanzaspersonales@financial-lab.com.
+- Horarios de atención.
+- Formulario de contacto.
+- Enlaces sociales disponibles.
+
+## 3. Dirección visual
+
+Toma de Novaire:
+
+- Composición editorial y asimétrica.
+- Tipografía de gran escala.
+- Márgenes amplios y consistentes.
+- Fondos oscuros y secciones claras estratégicas.
+- Líneas divisorias finas.
+- Imágenes protagonistas.
+- Transiciones sobrias.
+- Sensación de portafolio premium.
+
+No copies:
+
+- Textos de Novaire.
+- Marca, logotipo o nombre Novaire.
+- Fotografías de Novaire.
+- Código propietario.
+- Casos de estudio o nombres de clientes de la plantilla.
+
+## 4. Animaciones
+
+Implementa:
+
+- Loader breve.
+- Revelado de títulos por líneas.
+- Máscaras verticales para imágenes.
+- Parallax suave.
+- ScrollTrigger o IntersectionObserver.
+- Secciones sticky cuando aporten a la narrativa.
+- Marquee moderado con frases reales del sitio.
+- Hover con desplazamiento de flechas y escala leve de imagen.
+- Entrada secuencial del hero.
+- Transiciones de fondos claros/oscuros.
+- Acordeones accesibles cuando se necesiten.
+- Respeto por `prefers-reduced-motion`.
+
+## 5. Reglas técnicas
+
+- HTML semántico.
+- CSS modular y responsive.
+- JavaScript limpio.
+- Compatible con GitHub Pages.
+- Sin errores de consola.
+- Sin rutas locales rotas.
+- Sin scroll horizontal.
+- Títulos sin recortes en móvil.
+- Elementos táctiles de mínimo 44 px.
+- Imágenes con `alt` descriptivo.
+- Carga diferida fuera del primer viewport.
+- SEO básico, Open Graph, sitemap y robots.
+
+Se permiten GSAP, ScrollTrigger, Lenis y SplitType, siempre que la página siga funcionando si las animaciones no cargan.
+
+## 6. Entregables
+
+Entrega un ZIP funcional llamado:
+
+`David_Aponte_Novaire_Adaptacion_Real.zip`
+
+Debe incluir:
+
+- `index.html`
+- `assets/`
+- `css/`
+- `js/`
+- `README.md`
+- `robots.txt`
+- `sitemap.xml`
+- Todas las imágenes reales utilizadas.
+- Los enlaces de video reales.
+- Una lista de cambios.
+- Una lista de cualquier contenido que no haya podido ubicarse.
+
+## 7. Prohibiciones
+
+- No usar textos provisionales.
+- No usar la palabra “REEMPLAZAR” en la web final.
+- No inventar una nueva propuesta de valor.
+- No utilizar fotografías de stock.
+- No generar retratos con IA.
+- No cambiar “David Aponte” por “David Arenas”.
+- No confundir el sitio con Tángara u otros proyectos.
+- No eliminar el curso, los servicios o los testimonios reales.
+- No entregar solamente recomendaciones: entrega el proyecto completo.
