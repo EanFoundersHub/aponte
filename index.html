@@ -1,555 +1,1550 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b0b0b">
-  <meta name="description" content="David Aponte, conferencista y coach en finanzas personales y corporativas. Conferencias, talleres, mentoría y curso de Transformación Financiera.">
-  <meta name="robots" content="index,follow,max-image-preview:large">
-  <link rel="canonical" href="https://www.davidaponte.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_CO">
-  <meta property="og:title" content="David Aponte | Transformación Financiera">
-  <meta property="og:description" content="Conferencias, mentoría y formación práctica para transformar decisiones financieras personales y corporativas.">
-  <meta property="og:url" content="https://www.davidaponte.com/">
-  <meta property="og:image" content="david-aponte-retrato-principal.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>David Aponte | Conferencista y coach en finanzas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Person",
-        "name":"David Aponte",
-        "jobTitle":"Conferencista y coach en finanzas personales y corporativas",
-        "url":"https://www.davidaponte.com/",
-        "image":"https://www.davidaponte.com/david-aponte-retrato-principal.png",
-        "email":"mailto:finanzaspersonales@financial-lab.com",
-        "telephone":"+57 323 840 2062",
-        "address":{"@type":"PostalAddress","addressLocality":"Bogotá","addressCountry":"CO"},
-        "worksFor":{"@type":"Organization","name":"Financial Lab"}
-      },
-      {
-        "@type":"Course",
-        "name":"Transformación Financiera",
-        "description":"Programa personalizado de cuatro sesiones para organizar las finanzas personales, reducir deudas y crear un plan de inversión.",
-        "provider":{"@type":"Organization","name":"Financial Lab"},
-        "offers":{"@type":"Offer","price":"3300000","priceCurrency":"COP","availability":"https://schema.org/InStock"}
-      }
-    ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Aponte — Conferencista y Coach en Finanzas Personales y Corporativas</title>
+<meta name="description" content="David Aponte, CEO de Financial Lab. Conferencista, mentor e inversionista. Transforma tu vida financiera con estrategias reales y probadas.">
+<meta property="og:title" content="David Aponte — Libertad Financiera">
+<meta property="og:description" content="Conferencista y Coach en Finanzas Personales y Corporativas. CEO Financial Lab.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root {
+  --bg:        #080808;
+  --bg-2:      #0f0f0f;
+  --bg-3:      #151515;
+  --bg-card:   #111111;
+  --bg-light:  #f5f1eb;
+  --border:    rgba(255,255,255,0.07);
+  --border-md: rgba(255,255,255,0.13);
+  --text:      #f0ede8;
+  --text-2:    rgba(240,237,232,0.58);
+  --text-3:    rgba(240,237,232,0.30);
+  --text-dark: #1a1714;
+  --accent:    #b8935a;
+  --accent-lt: #d4aa72;
+  --accent-dim:rgba(184,147,90,0.12);
+  --green:     #4ade80;
+  --fd:        'Playfair Display', Georgia, serif;
+  --fb:        'Inter', -apple-system, sans-serif;
+  --ease:      cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ============================================================
+   RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: auto; overscroll-behavior-y: auto; }
+body {
+  font-family: var(--fb);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { display: block; max-width: 100%; }
+
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-md); border-radius: 2px; }
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container  { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.section    { padding: 96px 0; }
+.section-sm { padding: 64px 0; }
+.section-lt { padding: 96px 0; background: var(--bg-light); color: var(--text-dark); }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.section-header { margin-bottom: 48px; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+.eyebrow {
+  font-size: 11px; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent);
+}
+.eyebrow-dark { color: var(--accent); }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px;
+  background: var(--accent); color: #fff;
+  font-size: 14px; font-weight: 600; border-radius: 100px;
+  transition: opacity 0.2s, transform 0.2s var(--ease-out);
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-2px); }
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px;
+  border: 1px solid var(--border-md);
+  color: var(--text-2); font-size: 14px; border-radius: 100px;
+  background: rgba(255,255,255,0.02);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+.btn-ghost:hover { color: var(--text); transform: translateY(-2px); }
+.btn-ghost-dark {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 13px 28px;
+  border: 1px solid rgba(26,23,20,0.2);
+  color: var(--text-dark); font-size: 14px; border-radius: 100px;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-ghost-dark:hover { background: rgba(26,23,20,0.06); transform: translateY(-2px); }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+nav {
+  position: fixed; inset: 0 0 auto; z-index: 100;
+  padding: 18px 0;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+nav.scrolled {
+  background: rgba(8,8,8,0.96);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  max-width: 1200px; margin: 0 auto; padding: 0 40px;
+}
+.nav-logo {
+  font-family: var(--fd); font-size: 18px;
+  letter-spacing: -0.01em; line-height: 1.1;
+}
+.nav-logo span { display: block; font-size: 10px; font-family: var(--fb); font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-top: 1px; }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { font-size: 13px; color: var(--text-2); transition: color 0.2s; }
+.nav-links a:hover { color: var(--text); }
+.nav-cta {
+  font-size: 13px; font-weight: 600;
+  color: var(--bg); background: var(--accent);
+  padding: 9px 22px; border-radius: 100px;
+  transition: opacity 0.2s;
+}
+.nav-cta:hover { opacity: 0.85; }
+.nav-burger {
+  display: none; flex-direction: column; gap: 5px; padding: 4px; cursor: pointer;
+}
+.nav-burger span {
+  display: block; width: 22px; height: 1.5px; background: var(--text-2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-burger.open span:nth-child(2) { opacity: 0; }
+.nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.nav-mobile {
+  display: none; position: fixed; inset: 0;
+  background: var(--bg); z-index: 99;
+  flex-direction: column; align-items: center; justify-content: center; gap: 28px;
+}
+.nav-mobile.open { display: flex; }
+.nav-mobile a { font-family: var(--fd); font-size: 28px; color: var(--text-2); transition: color 0.2s; }
+.nav-mobile a:hover { color: var(--text); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+#hero {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+  padding-top: 80px;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.018) 1px, transparent 1px);
+  background-size: 72px 72px;
+  pointer-events: none;
+}
+.hero-glow {
+  position: absolute; bottom: -200px; left: -100px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(184,147,90,0.07) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-content { padding: 60px 40px 60px 40px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px;
+  border: 1px solid var(--border-md);
+  border-radius: 100px;
+  font-size: 12px; color: var(--text-2);
+  background: rgba(255,255,255,0.02);
+  margin-bottom: 32px;
+}
+.badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green); box-shadow: 0 0 6px var(--green);
+  animation: pulse 2.2s ease-in-out infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.5;transform:scale(.8)} }
+
+.hero-title {
+  font-family: var(--fd);
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 400; line-height: 0.95; letter-spacing: -0.04em;
+  margin-bottom: 6px;
+}
+.hero-title em { font-style: italic; color: var(--accent); }
+.hero-role {
+  font-family: var(--fd);
+  font-size: clamp(18px, 2.5vw, 30px);
+  font-weight: 400; font-style: italic;
+  color: var(--text-2); letter-spacing: -0.02em;
+  line-height: 1.3; margin-bottom: 40px;
+}
+.hero-cta { display: flex; align-items: center; gap: 14px; }
+.hero-scroll {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+}
+.hero-scroll-line {
+  width: 1px; height: 44px;
+  background: linear-gradient(to bottom, transparent, rgba(184,147,90,0.4));
+  animation: scroll-line 2.2s ease-in-out infinite;
+  margin: 0 auto;
+}
+@keyframes scroll-line {
+  0%,100%{ opacity:0; transform:scaleY(.3) translateY(-20px); }
+  50%    { opacity:1; transform:scaleY(1)  translateY(0); }
+}
+.hero-visual {
+  position: relative; height: 100svh; overflow: hidden;
+  display: flex; align-items: flex-end; justify-content: center;
+}
+.hero-photo {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+}
+.hero-visual-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to right, var(--bg) 0%, transparent 30%, transparent 70%, var(--bg) 100%),
+              linear-gradient(to top, var(--bg) 0%, transparent 20%);
+}
+
+/* ============================================================
+   TICKER
+   ============================================================ */
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 13px 0; background: var(--bg-2);
+}
+.ticker-track {
+  display: flex; white-space: nowrap;
+  width: max-content; animation: ticker 30s linear infinite;
+}
+.ticker-item {
+  display: inline-flex; align-items: center; gap: 20px;
+  padding: 0 36px; font-size: 11px; font-weight: 500;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3);
+}
+.ticker-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+
+/* ============================================================
+   ROLES / CREDENTIALS
+   ============================================================ */
+.roles-grid {
+  display: grid; grid-template-columns: repeat(5,1fr);
+  gap: 2px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
+}
+.role-card {
+  padding: 32px 24px; background: var(--bg-card);
+  text-align: center;
+  transition: background 0.25s ease;
+}
+.role-card:hover { background: var(--bg-3); }
+.role-icon {
+  width: 52px; height: 52px; margin: 0 auto 16px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 12px; background: var(--accent-dim);
+  overflow: hidden;
+}
+.role-icon img { width: 30px; height: 30px; object-fit: contain; filter: brightness(1.2); }
+.role-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 4px; }
+.role-sub   { font-size: 11px; color: var(--text-3); line-height: 1.4; }
+
+/* ============================================================
+   ABOUT / MANIFESTO
+   ============================================================ */
+.about-grid {
+  display: grid; grid-template-columns: 5fr 7fr;
+  gap: 80px; align-items: start;
+}
+.about-left { position: sticky; top: 120px; }
+.about-label {
+  font-family: var(--fd); font-size: clamp(32px, 4vw, 52px);
+  font-weight: 400; letter-spacing: -0.03em;
+  line-height: 1.05; margin-bottom: 28px;
+}
+.about-label em { font-style: italic; color: var(--accent); }
+.about-stat-row { display: flex; gap: 32px; margin-top: 36px; }
+.about-stat-num {
+  font-family: var(--fd); font-size: 36px;
+  font-weight: 400; letter-spacing: -0.03em;
+  color: var(--text); line-height: 1;
+}
+.about-stat-num span { color: var(--accent); }
+.about-stat-label { font-size: 12px; color: var(--text-3); margin-top: 4px; }
+.about-manifesto { display: flex; flex-direction: column; gap: 28px; padding-top: 8px; }
+.manifesto-block {
+  font-size: 17px; font-weight: 300; color: var(--text-2);
+  line-height: 1.8; border-left: 1px solid var(--border-md);
+  padding-left: 24px;
+}
+.manifesto-block strong { color: var(--text); font-weight: 500; }
+.manifesto-cta { margin-top: 12px; }
+
+/* ============================================================
+   ENFOQUE — sticky scroll scene
+   ============================================================ */
+.scroll-scene { position: relative; width: 100%; isolation: isolate; }
+.enfoque-scroll-scene { height: 280vh; }
+.servicios-scroll-scene { height: 260vh; }
+
+.enfoque-stage {
+  position: sticky; top: 0; width: 100%; height: 100svh;
+  min-height: 640px; overflow: clip;
+  display: flex; align-items: center;
+  background: var(--bg); contain: paint style;
+}
+.enfoque-inner { position: relative; width: 100%; height: 100%; z-index: 1; }
+
+.enfoque-inner > .eyebrow {
+  position: absolute;
+  top: clamp(80px,10vh,120px); left: 40px; z-index: 4;
+  opacity: 0; transform: translate3d(0,8px,0);
+}
+.enfoque-inner > .enfoque-title {
+  position: absolute;
+  top: clamp(100px,12vh,144px); left: 40px; right: 40px; z-index: 4;
+  opacity: 0; transform: translate3d(0,8px,0);
+  font-family: var(--fd);
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 400; letter-spacing: -0.025em; line-height: 1.1;
+  max-width: 680px;
+}
+.enfoque-inner > .enfoque-title em { font-style: italic; color: var(--accent); }
+.enfoque-card {
+  position: absolute; left: 40px; right: 40px; top: 50%;
+  opacity: 0; transform: translate3d(0, calc(-50% + 12px), 0);
+  backface-visibility: hidden;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 2px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
+}
+.enfoque-block {
+  padding: 36px 40px; background: var(--bg-card);
+}
+.enfoque-num {
+  font-family: var(--fd); font-size: 52px; font-weight: 400;
+  color: rgba(184,147,90,0.15); letter-spacing: -0.05em;
+  line-height: 1; margin-bottom: 16px;
+}
+.enfoque-block-title { font-size: 16px; font-weight: 500; color: var(--text); margin-bottom: 10px; }
+.enfoque-block-desc  { font-size: 14px; color: var(--text-2); line-height: 1.7; }
+
+/* ============================================================
+   SERVICIOS — sticky scroll scene
+   ============================================================ */
+.servicios-stage {
+  position: sticky; top: 0; width: 100%; height: 100svh;
+  min-height: 640px; overflow: clip;
+  display: flex; align-items: center;
+  background: var(--bg); contain: paint style;
+}
+.servicios-inner { position: relative; width: 100%; height: 100%; z-index: 1; }
+
+.servicios-inner > .eyebrow {
+  position: absolute; top: clamp(80px,10vh,120px); left: 40px; z-index: 4;
+  opacity: 0; transform: translate3d(0,8px,0);
+}
+.servicios-inner > .serv-title {
+  position: absolute; top: clamp(100px,13vh,150px); left: 40px; right: 40px; z-index: 4;
+  opacity: 0; transform: translate3d(0,8px,0);
+  font-family: var(--fd); font-size: clamp(28px,3.5vw,48px);
+  font-weight: 400; letter-spacing: -0.025em; line-height: 1.1; max-width: 600px;
+}
+.serv-card {
+  position: absolute; left: 40px; right: 40px; top: 50%;
+  transform: translate3d(0,calc(-44% + 12px),0);
+  opacity: 0; backface-visibility: hidden;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border); border-radius: 20px; overflow: hidden;
+}
+.serv-card-info { padding: 48px; display: flex; flex-direction: column; justify-content: space-between; }
+.serv-card-tag  { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+.serv-card-title { font-family: var(--fd); font-size: 32px; font-weight: 400; letter-spacing: -0.025em; line-height: 1.2; margin-bottom: 16px; }
+.serv-card-desc  { font-size: 15px; color: var(--text-2); line-height: 1.7; flex: 1; margin-bottom: 32px; }
+.serv-card-img {
+  position: relative; overflow: hidden;
+  background: var(--bg-3); min-height: 340px;
+}
+.serv-card-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ============================================================
+   CURSO
+   ============================================================ */
+.curso-hero {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start;
+}
+.curso-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border: 1px solid var(--border-md);
+  border-radius: 100px; font-size: 12px; color: var(--text-2);
+  background: rgba(255,255,255,0.02); margin-bottom: 24px;
+}
+.curso-title {
+  font-family: var(--fd); font-size: clamp(36px, 4.5vw, 64px);
+  font-weight: 400; letter-spacing: -0.03em; line-height: 1.0;
+  margin-bottom: 20px;
+}
+.curso-title em { font-style: italic; color: var(--accent); }
+.curso-desc { font-size: 16px; color: var(--text-2); line-height: 1.75; margin-bottom: 32px; }
+.curso-public {
+  background: var(--bg-3); border: 1px solid var(--border);
+  border-radius: 14px; padding: 24px 28px; margin-bottom: 32px;
+}
+.curso-public-title { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.curso-public-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.curso-public-list li { font-size: 14px; color: var(--text-2); display: flex; align-items: flex-start; gap: 10px; }
+.curso-public-list li::before { content: '—'; color: var(--accent); flex-shrink: 0; }
+.curso-right { position: sticky; top: 120px; }
+.precio-card {
+  background: var(--bg-card); border: 1px solid var(--border-md);
+  border-radius: 20px; padding: 36px; margin-bottom: 24px;
+}
+.precio-label { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 8px; }
+.precio-num {
+  font-family: var(--fd); font-size: 52px; font-weight: 400;
+  letter-spacing: -0.04em; line-height: 1; color: var(--text); margin-bottom: 4px;
+}
+.precio-num small { font-size: 18px; color: var(--text-3); font-family: var(--fb); font-weight: 300; }
+.precio-garantia {
+  font-size: 13px; color: var(--text-2); line-height: 1.6;
+  border-top: 1px solid var(--border); margin-top: 20px; padding-top: 20px;
+}
+.precio-beneficios { display: flex; flex-direction: column; gap: 10px; margin: 20px 0 28px; }
+.precio-beneficio { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--text-2); }
+.precio-beneficio::before { content: '✓'; color: var(--green); font-weight: 600; flex-shrink: 0; }
+.modulos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
+.modulo-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+  transition: border-color 0.2s, transform 0.25s var(--ease-out);
+  cursor: pointer;
+}
+.modulo-card:hover { border-color: var(--border-md); transform: translateY(-3px); }
+.modulo-img { aspect-ratio: 1; overflow: hidden; background: var(--bg-3); }
+.modulo-img img { width: 100%; height: 100%; object-fit: cover; }
+.modulo-info { padding: 16px 20px; }
+.modulo-num   { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.modulo-title { font-size: 14px; font-weight: 500; color: var(--text); line-height: 1.3; }
+.fotos-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 2px; background: var(--border);
+  border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+  margin-top: 48px;
+}
+.foto-slot { aspect-ratio: 1; overflow: hidden; background: var(--bg-3); }
+.foto-slot img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.foto-slot:hover img { transform: scale(1.04); }
+
+/* ============================================================
+   VIDEOS
+   ============================================================ */
+.videos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.video-embed {
+  border-radius: 16px; overflow: hidden;
+  background: var(--bg-3); border: 1px solid var(--border);
+}
+.video-embed iframe {
+  width: 100%; aspect-ratio: 16/9;
+  display: block; border: none;
+}
+
+/* ============================================================
+   TESTIMONIOS
+   ============================================================ */
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: 16px; margin-bottom: 16px;
+}
+.testi-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.testi-card {
+  padding: 28px; background: var(--bg-card);
+  border: 1px solid var(--border); border-radius: 16px;
+}
+.testi-quote {
+  font-size: 14px; color: var(--text-2); line-height: 1.75;
+  font-style: italic; margin-bottom: 20px;
+}
+.testi-quote::before { content: '«'; color: var(--accent); font-size: 20px; font-family: var(--fd); display: block; margin-bottom: 6px; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-av {
+  width: 40px; height: 40px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0; background: var(--bg-3);
+}
+.testi-av img { width: 100%; height: 100%; object-fit: cover; }
+.testi-name { font-size: 13px; font-weight: 500; color: var(--text); }
+.testi-role { font-size: 11px; color: var(--text-3); }
+
+/* ============================================================
+   CONTACTO
+   ============================================================ */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+.contact-info { padding-top: 8px; }
+.contact-title {
+  font-family: var(--fd); font-size: clamp(32px,4vw,52px);
+  font-weight: 400; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 20px;
+}
+.contact-title em { font-style: italic; color: var(--accent); }
+.contact-meta { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+.contact-meta-item { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--text-2); }
+.contact-meta-icon {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--accent-dim);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0;
+}
+.contact-horario {
+  margin-top: 28px; padding: 20px 24px;
+  background: var(--bg-3); border: 1px solid var(--border);
+  border-radius: 12px; font-size: 13px; color: var(--text-2); line-height: 1.8;
+}
+.contact-social { display: flex; gap: 10px; margin-top: 24px; }
+.social-btn {
+  padding: 9px 18px; border: 1px solid var(--border);
+  border-radius: 100px; font-size: 13px; color: var(--text-2);
+  transition: border-color 0.2s, color 0.2s;
+}
+.social-btn:hover { border-color: var(--border-md); color: var(--text); }
+.contact-form { display: flex; flex-direction: column; gap: 14px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.form-field { display: flex; flex-direction: column; gap: 6px; }
+.form-field label { font-size: 12px; font-weight: 500; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; }
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%; padding: 13px 16px;
+  background: var(--bg-3); border: 1px solid var(--border);
+  border-radius: 10px; color: var(--text); font-family: var(--fb); font-size: 14px;
+  transition: border-color 0.2s; outline: none; resize: none;
+  -webkit-appearance: none;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus { border-color: var(--accent); }
+.form-field select { cursor: pointer; }
+.form-field select option { background: var(--bg-3); }
+
+/* ============================================================
+   CTA BAND
+   ============================================================ */
+.cta-band { background: var(--bg-2); border-top: 1px solid var(--border); overflow: hidden; }
+.cta-band-inner { text-align: center; padding: 96px 40px; }
+.cta-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 6px 14px; border: 1px solid var(--border-md);
+  border-radius: 100px; font-size: 12px; color: var(--text-2); margin-bottom: 28px;
+}
+.cta-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 6px var(--green); animation: pulse 2.2s ease-in-out infinite; }
+.cta-main-title {
+  font-family: var(--fd); font-size: clamp(48px,8vw,88px);
+  font-weight: 400; line-height: 1.0; letter-spacing: -0.04em; margin-bottom: 20px;
+}
+.cta-main-title em { font-style: italic; color: var(--accent); }
+.cta-sub { font-size: 17px; font-weight: 300; color: var(--text-2); max-width: 440px; margin: 0 auto 40px; line-height: 1.7; }
+.cta-marquee-wrap { overflow: hidden; margin: 32px -60px; }
+.cta-marquee { display: flex; width: max-content; animation: ticker 22s linear infinite; }
+.cta-marquee-item {
+  display: inline-flex; align-items: center; gap: 14px; padding: 0 16px;
+  font-family: var(--fd); font-size: clamp(36px,5.5vw,64px);
+  font-weight: 400; color: rgba(240,237,232,0.08);
+  white-space: nowrap; letter-spacing: -0.03em;
+}
+.cta-sep { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: 0.3; }
+.cta-actions { display: flex; align-items: center; justify-content: center; gap: 14px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer { border-top: 1px solid var(--border); padding: 56px 0 36px; }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+.footer-brand { font-family: var(--fd); font-size: 20px; letter-spacing: -0.01em; margin-bottom: 6px; }
+.footer-sub    { font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 14px; }
+.footer-tagline { font-size: 13px; color: var(--text-3); line-height: 1.65; margin-bottom: 20px; }
+.footer-social { display: flex; gap: 8px; }
+.footer-social .social-btn { font-size: 12px; }
+.footer-col-title { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); margin-bottom: 16px; }
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer-links a { font-size: 13px; color: var(--text-2); transition: color 0.2s; }
+.footer-links a:hover { color: var(--text); }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-3); }
+.footer-bottom-links { display: flex; gap: 20px; }
+.footer-bottom-links a { color: var(--text-3); transition: color 0.2s; }
+.footer-bottom-links a:hover { color: var(--text-2); }
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+.reveal, .reveal-l, .reveal-r, .reveal-s {
+  opacity: 0;
+  transition: opacity 1.5s var(--ease), transform 1.5s var(--ease);
+  will-change: opacity, transform;
+}
+.reveal   { transform: translateY(14px); }
+.reveal-l { transform: translateX(-14px); }
+.reveal-r { transform: translateX(14px); }
+.reveal-s { transform: scale(0.97); }
+.reveal.in, .reveal-l.in, .reveal-r.in, .reveal-s.in { opacity:1; transform:none; }
+.d1 { transition-delay: 0.07s; }
+.d2 { transition-delay: 0.15s; }
+.d3 { transition-delay: 0.23s; }
+
+.stagger > * {
+  opacity: 0; transform: translateY(10px);
+  transition: opacity 1.3s var(--ease), transform 1.3s var(--ease);
+}
+.stagger.in > *:nth-child(1) { transition-delay: 0.00s; }
+.stagger.in > *:nth-child(2) { transition-delay: 0.09s; }
+.stagger.in > *:nth-child(3) { transition-delay: 0.18s; }
+.stagger.in > *:nth-child(4) { transition-delay: 0.27s; }
+.stagger.in > *:nth-child(5) { transition-delay: 0.36s; }
+.stagger.in > *:nth-child(6) { transition-delay: 0.45s; }
+.stagger.in > * { opacity:1; transform:none; }
+
+/* ============================================================
+   HERO ENTRANCE
+   ============================================================ */
+@keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } }
+@keyframes fade { from { opacity:0; } to { opacity:1; } }
+
+#nav            { animation: rise 0.8s var(--ease) 0.1s  both; }
+.hero-badge     { animation: rise 0.9s var(--ease) 0.3s  both; }
+.hero-title     { animation: rise 1.0s var(--ease) 0.45s both; }
+.hero-role      { animation: rise 1.0s var(--ease) 0.60s both; }
+.hero-cta       { animation: rise 0.9s var(--ease) 0.74s both; }
+.hero-visual    { animation: fade 1.2s var(--ease) 0.2s  both; }
+.hero-scroll    { animation: fade 1.0s ease 1.4s both; }
+
+#hero .reveal, #hero .reveal-l, #hero .reveal-r, #hero .reveal-s {
+  opacity:1 !important; transform:none !important; transition:none !important;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  #hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-visual { height: 60vw; max-height: 480px; }
+  .hero-content { padding: 60px 40px 20px; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-left { position: relative; top: auto; }
+  .roles-grid { grid-template-columns: repeat(3,1fr); }
+  .curso-hero { grid-template-columns: 1fr; }
+  .curso-right { position: relative; top: auto; }
+  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .enfoque-card { grid-template-columns: 1fr; }
+  .serv-card { grid-template-columns: 1fr; }
+  .serv-card-img { min-height: 220px; }
+}
+@media (max-width: 768px) {
+  .container { padding: 0 24px; }
+  .nav-links { display: none; }
+  .nav-burger { display: flex; }
+  .nav-inner { padding: 0 24px; }
+  .hero-content { padding: 60px 24px 20px; }
+  .roles-grid { grid-template-columns: 1fr 1fr; }
+  .modulos-grid { grid-template-columns: 1fr; }
+  .fotos-grid { grid-template-columns: 1fr 1fr; }
+  .videos-grid { grid-template-columns: 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .testi-grid-2 { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+
+  .enfoque-scroll-scene,
+  .servicios-scroll-scene { height: auto; }
+  .enfoque-stage, .servicios-stage {
+    position: relative; top: auto; height: auto; min-height: 0;
+    overflow: visible; padding: 72px 0; contain: none;
   }
-  </script>
+  .enfoque-inner, .servicios-inner { height: auto; }
+  .enfoque-inner > .eyebrow,
+  .enfoque-inner > .enfoque-title,
+  .enfoque-inner > .enfoque-card,
+  .servicios-inner > .eyebrow,
+  .servicios-inner > .serv-title,
+  .servicios-inner > .serv-card {
+    position: relative; inset: auto; width: auto;
+    opacity: 1 !important; transform: none !important;
+    top: auto; left: auto; right: auto;
+  }
+  .enfoque-inner > .enfoque-title { margin-bottom: 24px; }
+  .enfoque-inner > .enfoque-card  { margin-bottom: 20px; }
+  .servicios-inner > .serv-title  { margin-bottom: 24px; }
+  .servicios-inner > .serv-card   { margin-bottom: 20px; }
+}
+@media (max-width: 480px) {
+  .roles-grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal,.reveal-l,.reveal-r,.reveal-s,.stagger > * {
+    transition: opacity 0.3s ease !important; transform:none !important;
+  }
+  .ticker-track,.cta-marquee { animation: none !important; }
+}
+</style>
 </head>
 <body>
-  <div class="loader" id="loader" aria-hidden="true">
-    <div class="loader__mark">DA</div>
-    <div class="loader__line"><span></span></div>
+
+<!-- NAV MOBILE -->
+<div class="nav-mobile" id="navMobile" role="dialog" aria-label="Menú de navegación">
+  <a href="#about"    onclick="closeMenu()">Sobre David</a>
+  <a href="#servicios" onclick="closeMenu()">Servicios</a>
+  <a href="#curso"    onclick="closeMenu()">Curso</a>
+  <a href="#contacto" onclick="closeMenu()">Contacto</a>
+  <a href="#contacto" onclick="closeMenu()" class="btn-primary" style="margin-top:8px">Ver conferencias</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Navegación principal">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="David Aponte inicio">
+      David Aponte
+      <span>Financial Lab</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Sobre David</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#curso">Curso</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:14px">
+      <a href="#contacto" class="nav-cta">Ver conferencias</a>
+      <button class="nav-burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot" aria-hidden="true"></div>
+      Mentor · Financial Lab
+    </div>
+    <h1 class="hero-title">
+      david<br><em>aponte</em>
+    </h1>
+    <p class="hero-role">
+      conferencista y coach en finanzas<br>personales y corporativas
+    </p>
+    <div class="hero-cta">
+      <a href="#servicios" class="btn-primary">Ver conferencias ↗</a>
+      <a href="#curso" class="btn-ghost">Conoce el curso</a>
+    </div>
   </div>
 
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="hero-visual">
+    <img
+      src="assets/home/david-aponte-retrato-principal.png"
+      alt="David Aponte, conferencista y coach en finanzas personales y corporativas"
+      class="hero-photo"
+      loading="eager"
+    >
+    <div class="hero-visual-overlay" aria-hidden="true"></div>
+  </div>
 
-  <header class="site-header" id="siteHeader">
-    <a href="#inicio" class="brand" aria-label="David Aponte, inicio">
-      <span class="brand__name">David Aponte</span>
-      <span class="brand__sub">Financial Lab</span>
-    </a>
-    <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#sobre-david">David</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#eventos">Eventos</a>
-      <a href="#curso">Curso</a>
-      <a href="#testimonios">Testimonios</a>
-    </nav>
-    <a class="header-cta" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
-    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menú">
-      <span></span><span></span>
-    </button>
-  </header>
+  <div class="hero-scroll" aria-hidden="true"><div class="hero-scroll-line"></div></div>
+</section>
 
-  <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
-    <a href="#sobre-david">David</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#eventos">Eventos</a>
-    <a href="#curso">Curso</a>
-    <a href="#videos">Videos</a>
-    <a href="#testimonios">Testimonios</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<!-- TICKER -->
+<div class="ticker-wrap" aria-label="Áreas de especialización">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Finanzas Personales</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Libertad Financiera</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Conferencias Corporativas</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Mentoría Financiera</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Talleres Interactivos</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Inversiones</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>CEO Financial Lab</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Diario Portafolio</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Finanzas Personales</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Libertad Financiera</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Conferencias Corporativas</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Mentoría Financiera</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Talleres Interactivos</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Inversiones</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>CEO Financial Lab</span>
+    <span class="ticker-item"><span class="ticker-dot" aria-hidden="true"></span>Diario Portafolio</span>
+  </div>
+</div>
 
-  <main id="contenido">
-    <section class="hero-scroll" id="inicio" data-scroll-scene="hero">
-      <div class="hero-sticky">
-        <div class="hero-grid container-wide">
-          <div class="hero-copy" data-hero-copy>
-            <div class="eyebrow"><span class="eyebrow__dot"></span> Mentor · David Aponte</div>
-            <h1 class="hero-title">
-              <span class="line-mask"><span>david</span></span>
-              <span class="line-mask"><span><em>aponte</em></span></span>
-            </h1>
-            <p class="hero-role">conferencista y coach en finanzas<br><strong>personales y corporativas</strong></p>
-            <a href="#servicios" class="button button--light">ver conferencias <span aria-hidden="true">↗</span></a>
-          </div>
-          <figure class="hero-portrait" data-hero-portrait>
-            <div class="portrait-halo"></div>
-            <img src="david-aponte-retrato-principal.png" alt="Retrato de David Aponte" width="683" height="1024" fetchpriority="high">
-            <figcaption>
-              <span>CEO</span>
-              <strong>Financial Lab</strong>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="scroll-cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+<!-- ============================================================
+     ROLES / CREDENCIALES
+     ============================================================ -->
+<section class="section-sm" id="credenciales">
+  <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom:20px; text-align:center">Credenciales</p>
+    <div class="roles-grid stagger">
+      <div class="role-card">
+        <div class="role-icon"><img src="assets/home/icono-empresario.png" alt="Ícono empresario"></div>
+        <div class="role-title">Empresario</div>
+        <div class="role-sub">CEO Financial-Lab</div>
       </div>
-    </section>
-
-    <section class="manifesto section-light" id="sobre-david">
-      <div class="container manifesto-grid">
-        <div class="manifesto-aside reveal">
-          <p class="section-kicker">David Aponte</p>
-          <p class="aside-role">CEO Financial Lab</p>
-          <div class="aside-line"></div>
-          <p class="aside-note">Transformación financiera sin fórmulas mágicas ni promesas vacías.</p>
-        </div>
-        <div class="manifesto-copy">
-          <p class="manifesto-lead reveal">Si tu estabilidad depende de un sueldo fijo y crees que invertir es un riesgo, es porque te enseñaron a tener miedo al dinero.</p>
-          <div class="prose reveal">
-            <p>Mi nombre es David Aponte y yo también crecí con esas creencias. Seguí el camino “seguro”, trabajé en grandes corporaciones… hasta que entendí que la estabilidad no es libertad.</p>
-            <p>A los 32 años logré mi independencia financiera con un método probado, sin fórmulas mágicas ni promesas vacías. 15 años me tomó llegar a él y lo logré no porque tuve suerte, sino porque diseñé un modelo en el que mi vida y mis finanzas fueron mi propio laboratorio y hoy, quiero compartirlo contigo.</p>
-            <p>Si tienes ahorros y no sabes cómo hacerlos crecer, si las deudas te ahogan o simplemente sueñas con un futuro sin preocupaciones económicas… Este espacio es para ti.</p>
-            <p>El dinero no es el problema. Es cómo lo entiendes. Y yo te enseñaré cómo cambiar eso para siempre.</p>
-            <p>Si estás aquí, es porque sabes que hay otra manera. Y yo estoy aquí para mostrártela.</p>
-          </div>
-          <p class="manifesto-signoff reveal">¡Bienvenido a la <em>Transformación Financiera!</em></p>
-          <a class="text-link reveal" href="#servicios">deseo más sobre las conferencias <span>↗</span></a>
-        </div>
+      <div class="role-card">
+        <div class="role-icon"><img src="assets/home/icono-inversionista.png" alt="Ícono inversionista"></div>
+        <div class="role-title">Inversionista</div>
+        <div class="role-sub">Finanzas activas</div>
       </div>
-    </section>
-
-    <section class="credentials section-dark" aria-labelledby="cred-title">
-      <div class="container-wide">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Roles y credenciales</p>
-          <h2 id="cred-title">Experiencia aplicada<br><em>desde distintos frentes.</em></h2>
-        </div>
-        <div class="credential-grid">
-          <article class="credential-card reveal">
-            <img src="icono-empresario.png" alt="Ícono de empresario" width="500" height="500" loading="lazy">
-            <span>01</span><h3>Empresario</h3><p>CEO FINANCIAL-LAB</p>
-          </article>
-          <article class="credential-card reveal">
-            <img src="icono-inversionista.png" alt="Ícono de inversionista" width="150" height="150" loading="lazy">
-            <span>02</span><h3>Inversionista</h3><p>Inversionista</p>
-          </article>
-          <article class="credential-card reveal">
-            <img src="icono-conferencista.png" alt="Ícono de conferencista" width="150" height="150" loading="lazy">
-            <span>03</span><h3>Conferencista</h3><p>Finanzas Personales y Corporativas</p>
-          </article>
-          <article class="credential-card reveal">
-            <img src="icono-mentor.png" alt="Ícono de mentor" width="150" height="150" loading="lazy">
-            <span>04</span><h3>Mentor</h3><p>Universidad Javeriana</p>
-          </article>
-          <article class="credential-card reveal">
-            <img src="icono-columnista.png" alt="Ícono de columnista" width="150" height="150" loading="lazy">
-            <span>05</span><h3>Columnista</h3><p>Diario Portafolio</p>
-          </article>
-        </div>
+      <div class="role-card">
+        <div class="role-icon"><img src="assets/home/icono-conferencista.png" alt="Ícono conferencista"></div>
+        <div class="role-title">Conferencista</div>
+        <div class="role-sub">Finanzas Personales y Corporativas</div>
       </div>
-    </section>
-
-    <section class="approach-story" id="enfoque" data-scroll-scene="approach">
-      <div class="approach-sticky">
-        <div class="approach-intro">
-          <p class="section-kicker">El camino hacia</p>
-          <h2>La Libertad Financiera<br><em>un enfoque humano y estratégico.</em></h2>
-        </div>
-        <div class="approach-stage container-wide">
-          <div class="approach-index" aria-hidden="true"><span data-story-index>01</span><i></i><b>04</b></div>
-          <div class="approach-panels">
-            <article class="approach-panel" data-story-panel>
-              <p class="panel-number">01</p>
-              <h3>Enfoque estratégico hacia la libertad financiera.</h3>
-              <p>Ayuda a empresas y emprendedores a enfrentar los retos cotidianos con claridad y acción.</p>
-            </article>
-            <article class="approach-panel" data-story-panel>
-              <p class="panel-number">02</p>
-              <h3>Experiencia y conocimiento práctico.</h3>
-              <p>Más de 300 empresas han sido apoyadas en el proceso de superar obstáculos financieros y alcanzar una estabilidad sólida.</p>
-            </article>
-            <article class="approach-panel" data-story-panel>
-              <p class="panel-number">03</p>
-              <h3>Estrategias comprobadas y aplicables.</h3>
-              <p>No solo basadas en teorías abstractas, sino en soluciones concretas que abordan los desafíos diarios de un empresario.</p>
-            </article>
-            <article class="approach-panel" data-story-panel>
-              <p class="panel-number">04</p>
-              <h3>Transformación de dilemas financieros en soluciones.</h3>
-              <p>David Aponte ofrece conferencias y mentorías con enfoque práctico, para que puedan superar obstáculos financieros y tomar decisiones inteligentes.</p>
-            </article>
-          </div>
-          <div class="approach-quote">
-            <span>no se trata de</span>
-            <p>Solo aprender la teoría, sino de poner en práctica estrategias reales que transformen tu vida, tanto a nivel personal como profesional.</p>
-            <a class="button button--dark" href="#curso">Accede al curso de Transformación Financiera ¡AHORA! <span>↗</span></a>
-          </div>
-        </div>
+      <div class="role-card">
+        <div class="role-icon"><img src="assets/home/icono-mentor.png" alt="Ícono mentor"></div>
+        <div class="role-title">Mentor</div>
+        <div class="role-sub">Universidad Javeriana</div>
       </div>
-    </section>
+      <div class="role-card">
+        <div class="role-icon"><img src="assets/home/icono-columnista.png" alt="Ícono columnista"></div>
+        <div class="role-title">Columnista</div>
+        <div class="role-sub">Diario Portafolio</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="services section-light" id="servicios">
-      <div class="container-wide">
-        <div class="services-heading reveal">
+<!-- ============================================================
+     SOBRE DAVID — MANIFESTO
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <p class="eyebrow reveal" style="margin-bottom:14px">david aponte</p>
+        <h2 class="about-label reveal d1">
+          CEO<br><em>Financial Lab</em>
+        </h2>
+        <p class="body-md reveal d2" style="font-size:14px;color:var(--text-3)">
+          Bogotá, Colombia
+        </p>
+        <div class="about-stat-row reveal d2">
           <div>
-            <p class="section-kicker">Mentor</p>
-            <h2>Para Finanzas Personales y Corporativas</h2>
+            <div class="about-stat-num">15<span>+</span></div>
+            <div class="about-stat-label">Años de experiencia</div>
           </div>
           <div>
-            <p class="big-question">¿Cómo te puede ayudar?</p>
-            <p>David ha creado un portafolio de servicios que conecta su pasión con su propósito: y es transformar la vida financiera de las personas.</p>
+            <div class="about-stat-num">300<span>+</span></div>
+            <div class="about-stat-label">Empresas acompañadas</div>
           </div>
         </div>
-        <div class="service-layout">
-          <figure class="service-visual reveal" id="serviceVisual">
-            <img src="talleres-interactivos.png" alt="David Aponte en un taller interactivo" width="400" height="300" loading="lazy">
-            <figcaption><span>Servicio activo</span><strong>Talleres interactivos</strong></figcaption>
-          </figure>
-          <div class="service-list">
-            <article class="service-row is-active reveal" data-service data-image="talleres-interactivos.png" data-alt="David Aponte en un taller interactivo">
-              <div class="service-row__top"><span>01</span><h3>Talleres interactivos</h3><i>↗</i></div>
-              <p>Es un espacio donde las personas comprenden cómo los ciclos económicos impactan sus negocios, dándoles la claridad y las herramientas necesarias para anticipar y adaptarse a esos cambios de manera estratégica.</p>
-              <img class="service-mobile-image" src="talleres-interactivos.png" alt="David Aponte en un taller interactivo" width="400" height="300" loading="lazy">
-              <a href="#contacto">Más información</a>
-            </article>
-            <article class="service-row reveal" data-service data-image="conferencias-corporativas.png" data-alt="David Aponte durante una conferencia corporativa">
-              <div class="service-row__top"><span>02</span><h3>Conferencias corporativas</h3><i>↗</i></div>
-              <p>Un programa diseñado para empresarios y emprendedores a enfrentar sus retos financieros con estrategias claras y prácticas, transformando la incertidumbre en soluciones efectivas para un crecimiento sostenido.</p>
-              <img class="service-mobile-image" src="conferencias-corporativas.png" alt="David Aponte durante una conferencia corporativa" width="400" height="300" loading="lazy">
-              <a href="#contacto">más información</a>
-            </article>
-            <article class="service-row reveal" data-service data-image="mentoria-financiera.png" data-alt="David Aponte durante una mentoría financiera">
-              <div class="service-row__top"><span>03</span><h3>Mentoría financiera</h3><i>↗</i></div>
-              <p>Es un espacio donde aprenderás de manera práctica y sencilla a entender los números de tu negocio, para que puedas tomar decisiones claras y mejorar la rentabilidad del mismo de forma efectiva.</p>
-              <img class="service-mobile-image" src="mentoria-financiera.png" alt="David Aponte durante una mentoría financiera" width="400" height="300" loading="lazy">
-              <a href="#contacto">Más información</a>
-            </article>
+        <div style="margin-top:32px" class="reveal d3">
+          <a href="#contacto" class="btn-primary">Deseo más sobre las conferencias ↗</a>
+        </div>
+      </div>
+
+      <div class="about-manifesto">
+        <div class="manifesto-block reveal">
+          Si tu estabilidad depende de un sueldo fijo y crees que invertir es un riesgo, es porque te enseñaron a tener miedo al dinero.
+        </div>
+        <div class="manifesto-block reveal d1">
+          Mi nombre es David Aponte y yo también crecí con esas creencias. Seguí el camino "seguro", trabajé en grandes corporaciones… hasta que entendí que <strong>la estabilidad no es libertad.</strong>
+        </div>
+        <div class="manifesto-block reveal d2">
+          A los 32 años logré mi independencia financiera con un método probado, sin fórmulas mágicas ni promesas vacías. <strong>15 años me tomó llegar a él</strong> y lo logré no porque tuve suerte, sino porque diseñé un modelo en el que mi vida y mis finanzas fueron mi propio laboratorio.
+        </div>
+        <div class="manifesto-block reveal">
+          Si tienes ahorros y no sabes cómo hacerlos crecer, si las deudas te ahogan o simplemente sueñas con un futuro sin preocupaciones económicas… <strong>Este espacio es para ti.</strong>
+        </div>
+        <div class="manifesto-block reveal d1">
+          El dinero no es el problema. Es cómo lo entiendes. Y yo te enseñaré cómo cambiar eso para siempre.<br><br>
+          Si estás aquí, es porque sabes que hay otra manera. Y yo estoy aquí para mostrártela.
+        </div>
+        <div class="manifesto-cta reveal d2">
+          <a href="#curso" class="btn-primary">Accede al curso de Transformación Financiera ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ENFOQUE — sticky scroll scene
+     ============================================================ -->
+<section class="scroll-scene enfoque-scroll-scene" id="enfoque">
+  <div class="enfoque-stage">
+    <div class="enfoque-inner container">
+
+      <p class="eyebrow">el camino hacia la Libertad Financiera</p>
+
+      <h2 class="enfoque-title">
+        Un enfoque <em>humano</em><br>y estratégico
+      </h2>
+
+      <!-- Card 1 -->
+      <div class="enfoque-card" id="enfoque-card-1">
+        <div class="enfoque-block">
+          <div class="enfoque-num">01</div>
+          <div class="enfoque-block-title">Enfoque estratégico hacia la libertad financiera</div>
+          <p class="enfoque-block-desc">Ayuda a empresas y emprendedores a enfrentar los retos cotidianos con claridad y acción.</p>
+        </div>
+        <div class="enfoque-block">
+          <div class="enfoque-num">02</div>
+          <div class="enfoque-block-title">Experiencia y conocimiento práctico</div>
+          <p class="enfoque-block-desc">Más de 300 empresas han sido apoyadas en el proceso de superar obstáculos financieros y alcanzar una estabilidad sólida.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="enfoque-card" id="enfoque-card-2">
+        <div class="enfoque-block">
+          <div class="enfoque-num">03</div>
+          <div class="enfoque-block-title">Estrategias comprobadas y aplicables</div>
+          <p class="enfoque-block-desc">No solo basadas en teorías abstractas, sino en soluciones concretas que abordan los desafíos diarios de un empresario.</p>
+        </div>
+        <div class="enfoque-block">
+          <div class="enfoque-num">04</div>
+          <div class="enfoque-block-title">Transformación de dilemas financieros en soluciones</div>
+          <p class="enfoque-block-desc">David Aponte ofrece conferencias y mentorías con enfoque práctico, para superar obstáculos financieros y tomar decisiones inteligentes.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICIOS — sticky scroll scene
+     ============================================================ -->
+<section class="scroll-scene servicios-scroll-scene" id="servicios">
+  <div class="servicios-stage">
+    <div class="servicios-inner container">
+
+      <p class="eyebrow">Portafolio de servicios</p>
+      <h2 class="serv-title">
+        Mentor para finanzas<br><em>personales y corporativas</em>
+      </h2>
+
+      <!-- Servicio 1 -->
+      <div class="serv-card" id="serv-card-1">
+        <div class="serv-card-info">
+          <div>
+            <div class="serv-card-tag">01 — Talleres</div>
+            <div class="serv-card-title">Talleres interactivos</div>
+            <p class="serv-card-desc">Es un espacio donde las personas comprenden cómo los ciclos económicos impactan sus negocios, dándoles la claridad y las herramientas necesarias para anticipar y adaptarse a esos cambios de manera estratégica.</p>
           </div>
+          <a href="#contacto" class="btn-primary">Más información ↗</a>
         </div>
-      </div>
-    </section>
-
-    <section class="service-details section-dark" id="eventos">
-      <div class="container-wide">
-        <div class="compact-heading reveal">
-          <p class="section-kicker">Servicios en detalle</p>
-          <h2>Experiencias financieras<br><em>para empresas y personas.</em></h2>
-          <p>El sitio original desarrolla estas líneas en su página de eventos. Aquí se integran dentro de una sola experiencia, con más información y menos espacio vacío.</p>
-        </div>
-
-        <div class="detail-grid">
-          <article class="detail-card reveal">
-            <span>01 · Educación financiera</span>
-            <h3>Talleres interactivos</h3>
-            <p>Encuentros prácticos para empresarios y emprendedores que necesitan comprender cómo los ciclos económicos afectan el crecimiento, la estabilidad y las decisiones de su negocio.</p>
-            <p>La metodología combina dinámicas participativas, casos reales y análisis en grupo para reconocer riesgos, anticipar cambios, optimizar recursos y responder con mayor claridad a los desafíos del mercado.</p>
-            <a href="https://wa.me/573238402062?text=Hola%2C%20quisiera%20cotizar%20un%20taller%20interactivo%20con%20David%20Aponte" target="_blank" rel="noopener">Cotizar taller ↗</a>
-          </article>
-
-          <article class="detail-card reveal">
-            <span>02 · Empresas y emprendedores</span>
-            <h3>Conferencias corporativas</h3>
-            <p>Conferencias basadas en experiencia aplicada con más de 300 empresas de diferentes sectores. El enfoque traduce los retos financieros diarios en herramientas concretas para mejorar el flujo de caja, el uso de recursos y la toma de decisiones.</p>
-            <ul>
-              <li>Transformar incertidumbre en soluciones efectivas.</li>
-              <li>Estrategias financieras claras y aplicables.</li>
-              <li>Liderazgo y toma de decisiones.</li>
-              <li>Identificación de problemas financieros clave.</li>
-              <li>Crecimiento estable y sostenible.</li>
-            </ul>
-            <a href="https://wa.me/573238402062?text=Hola%2C%20quisiera%20cotizar%20una%20conferencia%20corporativa%20con%20David%20Aponte" target="_blank" rel="noopener">Cotizar conferencia ↗</a>
-          </article>
-
-          <article class="detail-card reveal">
-            <span>03 · Acompañamiento empresarial</span>
-            <h3>Mentorías financieras</h3>
-            <p>Sesiones para profundizar en los asuntos que más inciden en la salud financiera del negocio. El trabajo se adapta al contexto de cada empresa y convierte las dudas en acciones claras.</p>
-            <ul>
-              <li>Presupuesto y control financiero.</li>
-              <li>Flujo de caja.</li>
-              <li>Gestión de impuestos.</li>
-              <li>Rentabilidad y uso eficiente de recursos.</li>
-            </ul>
-            <p>El objetivo es fortalecer la comprensión de los números y avanzar con una visión financiera más segura y estratégica.</p>
-            <a href="https://wa.me/573238402062?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20las%20mentor%C3%ADas%20financieras%20de%20David%20Aponte" target="_blank" rel="noopener">Solicitar mentoría ↗</a>
-          </article>
-
-          <article class="detail-card reveal">
-            <span>04 · Finanzas personales</span>
-            <h3>Conferencia de finanzas personales</h3>
-            <p>Una experiencia para quienes desean tomar el control de su dinero, gestionar mejor sus ingresos, ahorrar de forma estratégica y planear el futuro con mayor confianza.</p>
-            <p>Se abordan las barreras emocionales asociadas al dinero, la construcción de presupuestos, las decisiones de inversión y los errores que suelen frenar el camino hacia la libertad financiera. Cada participante termina con criterios y acciones concretas para avanzar.</p>
-            <a href="https://wa.me/573238402062?text=Hola%2C%20quisiera%20cotizar%20la%20conferencia%20de%20finanzas%20personales%20de%20David%20Aponte" target="_blank" rel="noopener">Cotizar actividad ↗</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="course section-dark" id="curso">
-      <div class="course-hero container-wide">
-        <div class="course-heading reveal">
-          <p class="section-kicker">Finanzas personales</p>
-          <h2>Libertad Financiera</h2>
-          <p class="course-label">curso</p>
-          <h3>Transformación <em>Financiera</em></h3>
-        </div>
-        <div class="course-intro reveal">
-          <p>Te presento Transformación Financiera, un programa diseñado específicamente para personas como tú, que buscan tomar el control de sus finanzas y alcanzar la libertad financiera antes de los 50 años.</p>
-          <p>Este curso está basado en un método diseñado por mí, que me ayudó a lograr mi propia libertad financiera a los 32 años y ahora quiero compartirlo contigo.</p>
+        <div class="serv-card-img">
+          <img src="assets/home/talleres-interactivos.png" alt="Talleres interactivos de finanzas con David Aponte" loading="lazy">
         </div>
       </div>
 
-      <div class="course-gallery" aria-label="Galería del curso Transformación Financiera">
-        <img src="curso-foto-01.jpg" alt="Sesión del curso Transformación Financiera" width="500" height="500" loading="lazy">
-        <img src="curso-foto-02.jpg" alt="Participantes del curso Transformación Financiera" width="500" height="500" loading="lazy">
-        <img src="curso-foto-03.jpg" alt="David Aponte facilitando una sesión financiera" width="500" height="500" loading="lazy">
-        <img src="curso-foto-04.jpg" alt="Explicación práctica de presupuesto" width="500" height="500" loading="lazy">
-        <img src="curso-foto-05.jpg" alt="Sesión sobre control financiero" width="500" height="500" loading="lazy">
-        <img src="curso-foto-06.jpg" alt="Conferencia de David Aponte" width="500" height="500" loading="lazy">
-      </div>
-
-      <div class="course-audience container">
-        <div class="audience-title reveal">
-          <p class="section-kicker">¿Para quién es este programa?</p>
-          <h3>Para quienes saben que su realidad financiera <em>puede ser diferente.</em></h3>
+      <!-- Servicio 2 -->
+      <div class="serv-card" id="serv-card-2">
+        <div class="serv-card-info">
+          <div>
+            <div class="serv-card-tag">02 — Conferencias</div>
+            <div class="serv-card-title">Conferencias corporativas</div>
+            <p class="serv-card-desc">Un programa diseñado para empresarios y emprendedores a enfrentar sus retos financieros con estrategias claras y prácticas, transformando la incertidumbre en soluciones efectivas para un crecimiento sostenido.</p>
+          </div>
+          <a href="#contacto" class="btn-primary">Más información ↗</a>
         </div>
-        <ul class="audience-list">
-          <li class="reveal"><span>01</span><p>Tienes una sola o ninguna fuente de ingresos</p></li>
-          <li class="reveal"><span>02</span><p>No tienes el control de tus finanzas</p></li>
-          <li class="reveal"><span>03</span><p>No tienes los resultados financieros que quieres.</p></li>
-          <li class="reveal"><span>04</span><p>Tienes demasiadas deudas</p></li>
-          <li class="reveal"><span>05</span><p>Vives preocupado por tu presente y/o tu futuro financiero.</p></li>
-          <li class="reveal"><span>06</span><p>Quieres invertir pero no sabes cómo, cuándo y dónde.</p></li>
-        </ul>
-      </div>
-
-      <div class="method container-wide">
-        <article class="method-card reveal">
-          <span>01</span>
-          <p class="section-kicker">Definición de metas financieras</p>
-          <h3>No podemos iniciar si no sabemos a dónde quieres llegar.</h3>
-          <p>Diseñamos paso a paso un plan para alcanzar tus metas financieras.</p>
-        </article>
-        <article class="method-card reveal">
-          <span>02</span>
-          <p class="section-kicker">Diagnóstico Financiero Personal</p>
-          <h3>Analizamos tus finanzas en los 4 aspectos fundamentales</h3>
-          <ul><li>Mentalidad</li><li>Gestión de deudas</li><li>Estilo de vida</li><li>Inversiones</li></ul>
-        </article>
-        <article class="method-card reveal">
-          <span>03</span>
-          <p class="section-kicker">Seguimiento personalizado</p>
-          <h3>Te acompañamos durante la ejecución.</h3>
-          <p>Te acompañamos en la ejecución del Plan de Acción y en la toma decisiones financieras relevantes en el proceso.</p>
-        </article>
-      </div>
-
-      <div class="modules container-wide">
-        <div class="modules-heading reveal">
-          <p class="section-kicker">Contenido del programa</p>
-          <h3>4 sesiones diseñadas para organizar tus finanzas personales, reducir deudas y crear un plan de inversión que te acerque a la Libertad Financiera.</h3>
-        </div>
-        <div class="module-grid">
-          <article class="module-card reveal">
-            <figure><img src="modulo-mentalidad-riqueza.png" alt="Módulo Mentalidad de Riqueza" width="300" height="300" loading="lazy"></figure>
-            <div><span>Sesión 01</span><h4>MENTALIDAD DE RIQUEZA</h4><p>Tus resultados financieros actuales son producto de tus decisiones pasadas, vamos a identificar las razones por las cuales no estás generando riqueza y nos enfocaremos en el cambio de mentalidad que requieres para construir tu Futuro Financiero.</p><a href="#contacto">MÁS INFORMACIÓN <b>↗</b></a></div>
-          </article>
-          <article class="module-card reveal">
-            <figure><img src="modulo-gestion-deudas.png" alt="Módulo Gestión de deudas" width="1080" height="1080" loading="lazy"></figure>
-            <div><span>Sesión 02</span><h4>Gestión de deudas</h4><p>Estrategias efectivas para gestionar tus deudas de una manera más eficiente y para usar la deuda como potencializador de tus inversiones.</p><a href="#contacto">MÁS INFORMACIÓN <b>↗</b></a></div>
-          </article>
-          <article class="module-card reveal">
-            <figure><img src="modulo-estilo-de-vida.png" alt="Módulo Estilo de vida" width="300" height="300" loading="lazy"></figure>
-            <div><span>Sesión 03</span><h4>Estilo de vida</h4><p>Este curso te brindará las herramientas necesarias para evaluar tu situación actual, identificar oportunidades y riesgos. Trazar un camino hacia un futuro más estable y próspero. A medida que avances, sentirás la tranquilidad de saber que cada decisión que tomes estará respaldada por una comprensión profunda de tus finanzas, lo que te permitirá avanzar con seguridad y certeza.</p><a href="#contacto">MÁS INFORMACIÓN <b>↗</b></a></div>
-          </article>
-          <article class="module-card reveal">
-            <figure><img src="modulo-portafolio-inversiones.png" alt="Módulo Portafolio de inversiones" width="300" height="300" loading="lazy"></figure>
-            <div><span>Sesión 04</span><h4>PORTAFOLIO DE INVERSIONES</h4><p>Te ayudo a responder las 3 preguntas que más me hacen y son: Cómo, Cuándo y Dónde debo invertir. Te abriré el portafolio de las inversiones validadas y recomendadas tanto por mí como por el CLUB DE INVERSIONISTAS. Que te permitirá avanzar hacia tu Libertad Financiera.</p><a href="#contacto">MÁS INFORMACIÓN <b>↗</b></a></div>
-          </article>
+        <div class="serv-card-img">
+          <img src="assets/home/conferencias-corporativas.png" alt="Conferencias corporativas de finanzas con David Aponte" loading="lazy">
         </div>
       </div>
 
-      <div class="investment container-wide reveal">
-        <div class="investment-main">
-          <p class="section-kicker">Alcanza tu Libertad Financiera</p>
-          <h3>Aprende a invertir y aumenta tus ahorros</h3>
-          <p class="guarantee">TE OFREZCO UNA GARANTÍA TOTAL: si, después de seguir toda la metodología y realizar una revisión conjunta, no ves resultados, te devolveré el 100% de tu dinero.</p>
+      <!-- Servicio 3 -->
+      <div class="serv-card" id="serv-card-3">
+        <div class="serv-card-info">
+          <div>
+            <div class="serv-card-tag">03 — Mentoría</div>
+            <div class="serv-card-title">Mentoría financiera</div>
+            <p class="serv-card-desc">Es un espacio donde aprenderás de manera práctica y sencilla a entender los números de tu negocio, para que puedas tomar decisiones claras y mejorar la rentabilidad del mismo de forma efectiva.</p>
+          </div>
+          <a href="#contacto" class="btn-primary">Más información ↗</a>
         </div>
-        <div class="price-card">
-          <p>VALOR DEL CURSO</p>
-          <strong>$3.300.000</strong>
-          <span>COP</span>
-          <ul>
-            <li>100% Personalizado</li>
-            <li>Resultados 100% Garantizados</li>
-            <li>Acompañamiento durante todo el proceso de Transformación Financiera</li>
+        <div class="serv-card-img">
+          <img src="assets/home/mentoria-financiera.png" alt="Mentoría financiera personalizada con David Aponte" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CURSO TRANSFORMACIÓN FINANCIERA
+     ============================================================ -->
+<section class="section" id="curso">
+  <div class="container">
+    <div class="curso-hero">
+      <div>
+        <div class="curso-badge reveal">
+          <span style="color:var(--accent)">★</span> Programa personalizado
+        </div>
+        <h2 class="curso-title reveal d1">
+          Transformación<br><em>Financiera</em>
+        </h2>
+        <p class="curso-desc reveal d2">
+          Te presento Transformación Financiera, un programa diseñado específicamente para personas como tú, que buscan tomar el control de sus finanzas y alcanzar la libertad financiera antes de los 50 años.
+        </p>
+        <div class="curso-public reveal d3">
+          <div class="curso-public-title">¿Para quién es este programa?</div>
+          <ul class="curso-public-list">
+            <li>Tienes una sola o ninguna fuente de ingresos</li>
+            <li>No tienes el control de tus finanzas</li>
+            <li>Tienes demasiadas deudas</li>
+            <li>Vives preocupado por tu presente y/o tu futuro financiero</li>
+            <li>Quieres invertir pero no sabes cómo, cuándo y dónde</li>
           </ul>
-          <a class="button button--light" href="https://wa.me/573238402062?text=Hola%20David%2C%20quiero%20inscribirme%20al%20curso%20Transformaci%C3%B3n%20Financiera" target="_blank" rel="noopener">Inscribirme <span>↗</span></a>
         </div>
       </div>
-    </section>
 
-    <section class="videos section-light" id="videos">
-      <div class="container-wide">
-        <div class="section-heading section-heading--dark reveal">
-          <p class="section-kicker">Contenido audiovisual</p>
-          <h2>Ideas financieras<br><em>para poner en práctica.</em></h2>
+      <div class="curso-right reveal-l">
+        <div class="precio-card">
+          <div class="precio-label">Valor del curso</div>
+          <div class="precio-num">$3.300.000 <small>COP</small></div>
+          <div class="precio-beneficios">
+            <div class="precio-beneficio">100% Personalizado</div>
+            <div class="precio-beneficio">Resultados 100% Garantizados</div>
+            <div class="precio-beneficio">Acompañamiento durante todo el proceso</div>
+          </div>
+          <a href="#contacto" class="btn-primary" style="width:100%;justify-content:center">Inscribirme ↗</a>
+          <p class="precio-garantia">
+            Te ofrezco una garantía total: si, después de seguir toda la metodología y realizar una revisión conjunta, no ves resultados, te devolveré el 100% de tu dinero.
+          </p>
         </div>
-        <div class="video-grid">
-          <article class="video-card reveal">
-            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/k-MkzhIgFM8?rel=0" title="Video de David Aponte sobre finanzas" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div class="video-meta"><span>Video 01</span><a href="https://www.youtube.com/watch?v=k-MkzhIgFM8" target="_blank" rel="noopener">Ver en YouTube ↗</a></div>
-          </article>
-          <article class="video-card reveal">
-            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/xAX6_tqWcs0?rel=0" title="Video de David Aponte sobre transformación financiera" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-            <div class="video-meta"><span>Video 02</span><a href="https://www.youtube.com/watch?v=xAX6_tqWcs0" target="_blank" rel="noopener">Ver en YouTube ↗</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="testimonials section-dark" id="testimonios">
-      <div class="container-wide">
-        <div class="section-heading reveal">
-          <p class="section-kicker">Esto es lo que dicen algunos de mis estudiantes</p>
-          <h2>Resultados que se cuentan<br><em>en primera persona.</em></h2>
-        </div>
-        <div class="testimonial-list">
-          <article class="testimonial reveal">
-            <figure><img src="testimonio-jennifer-bermudez.jpeg" alt="Jennifer Bermúdez" width="120" height="120" loading="lazy"></figure>
-            <blockquote>«Junto a David Aponte aprendimos una serie de habilidades para lograr esa Libertad Financiera que todos queremos, te invito a que puedas seguirlo y puedas aprender esos 5 tips que nos da»</blockquote>
-            <div><strong>Jennifer Bermúdez</strong><span>A&amp;C Riesgos</span></div>
-          </article>
-          <article class="testimonial reveal">
-            <figure><img src="testimonio-camara-comercio-casanare.jpg" alt="Cámara de Comercio del Casanare" width="120" height="120" loading="lazy"></figure>
-            <blockquote>«David dictó una conferencia sobre finanzas personales y corporativas a los estudiantes del programa técnico y tecnólogo de Contabilidad y Finanzas, Desarrollo y Multimedia donde los estudiantes quedaron encantados con la charla, especialmente con la forma en que David los hizo participar. Además, las herramientas prácticas que compartió fueron el mejor regalo para completar su intervención»</blockquote>
-            <div><strong>Deiby Cruz</strong><span>Cámara de Comercio del Casanare</span></div>
-          </article>
-          <article class="testimonial reveal">
-            <figure><img src="testimonio-franklin-barrera.jpg" alt="Franklin Barrera" width="600" height="600" loading="lazy"></figure>
-            <blockquote>«Soy parte del grupo de estudiantes de David Aponte. Su curso Transformación Financiera ha sido clave para organizar mis finanzas, aprender sobre inversiones, priorizar gastos y manejar un presupuesto eficiente. Gracias a él, ahora controlo mejor mis gastos y puedo comenzar a invertir. Recomiendo este curso especialmente a quienes no tienen noción de sus finanzas personales o no reconocen los déficits que afectan su estabilidad»</blockquote>
-            <div><strong>Franklin Barrera</strong></div>
-          </article>
-          <article class="testimonial testimonial--portrait reveal">
-            <figure><img src="testimonio-reinaldo-acosta.png" alt="Reinaldo Acosta" width="1080" height="1920" loading="lazy"></figure>
-            <blockquote>«David entiende como pocos la realidad nacional. Se nota que le apasiona la enseñanza y el bienestar de sus alumnos. Al hacer el curso con David y su empresa Financial Lab, recibí mucho más del dinero que invertí. Pude aplicar muchos conceptos que había aprendido en el pasado, pero no sabía cómo aplicarlos. David nos enseñó varios trucos que están para todos, pero que nadie conoce. Ahora soy consciente de cómo puedo llegar mucho más rápido al camino de prosperidad»</blockquote>
-            <div><strong>Reinaldo Acosta</strong></div>
-          </article>
-          <article class="testimonial testimonial--portrait reveal">
-            <figure><img src="testimonio-maria-del-pilar.png" alt="María del Pilar Pineda" width="1080" height="1920" loading="lazy"></figure>
-            <blockquote>«La decisión de tomar el curso de finanzas con David Aponte ha sido una de las mejores decisiones e inversiones. Realmente fue un proceso enriquecedor que me brindó las herramientas necesarias para mi organización financiera actual, pero sobre todo para tomar las riendas de mi futuro»</blockquote>
-            <div><strong>María del Pilar</strong><span>Fundadora de Conectar Seguros Ltda</span></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="community section-light" id="comunidad">
-      <div class="container-wide community-head reveal">
-        <div>
-          <p class="section-kicker">Ubicación y comunidad</p>
-          <h2>Desde Bogotá,<br><em>educación financiera en acción.</em></h2>
-        </div>
-        <div class="community-copy">
-          <p>Conoce algunos de los talleres y conferencias realizados por David Aponte y Financial Lab.</p>
-          <div class="community-links">
-            <a href="https://www.google.com/maps/search/?api=1&query=Bogot%C3%A1%2C+Colombia" target="_blank" rel="noopener">Bogotá, Colombia ↗</a>
-            <a href="https://www.instagram.com/davidaponte.oficial/" target="_blank" rel="noopener">@davidaponte.oficial ↗</a>
+        <div style="background:var(--bg-3);border:1px solid var(--border);border-radius:14px;padding:24px 28px">
+          <p class="eyebrow" style="margin-bottom:14px">El programa incluye</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="font-size:14px;color:var(--text-2)">📌 <strong style="color:var(--text)">Definición de metas financieras</strong> — Diseñamos paso a paso un plan para alcanzar tus metas.</div>
+            <div style="font-size:14px;color:var(--text-2)">📌 <strong style="color:var(--text)">Diagnóstico financiero personal</strong> — Analizamos tus finanzas en los 4 aspectos fundamentales.</div>
+            <div style="font-size:14px;color:var(--text-2)">📌 <strong style="color:var(--text)">Seguimiento personalizado</strong> — Te acompañamos en la ejecución del plan de acción.</div>
+            <div style="font-size:14px;color:var(--text-2)">📌 <strong style="color:var(--text)">4 sesiones especializadas</strong> — Mentalidad, Deudas, Estilo de vida e Inversiones.</div>
           </div>
         </div>
       </div>
-      <div class="community-gallery" aria-label="Galería de actividades de David Aponte">
-        <img src="contacto-galeria-01.jpg" alt="Taller financiero dirigido por David Aponte" width="300" height="300" loading="lazy">
-        <img src="contacto-galeria-02.jpg" alt="Conferencia sobre presupuesto y finanzas" width="300" height="300" loading="lazy">
-        <img src="contacto-galeria-03.jpg" alt="David Aponte durante una conferencia empresarial" width="300" height="300" loading="lazy">
-        <img src="contacto-galeria-04.jpg" alt="Actividad participativa de educación financiera" width="300" height="300" loading="lazy">
-        <img src="contacto-galeria-05.jpg" alt="Sesión sobre control y pago de impuestos" width="300" height="300" loading="lazy">
-        <img src="contacto-galeria-06.jpg" alt="Taller de presupuesto para empresarios" width="300" height="300" loading="lazy">
-      </div>
-    </section>
+    </div>
 
-    <section class="closing section-light">
-      <div class="closing-inner container-wide reveal">
-        <p class="section-kicker">Libertad FINANCIERA</p>
-        <h2>hacemos viables<br>tus metas <em>Financieras</em></h2>
-        <a class="button button--dark" href="#videos">Accede a más contenido ¡ahora! <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="contact section-dark" id="contacto">
-      <div class="container-wide contact-grid">
-        <div class="contact-copy reveal">
-          <p class="section-kicker">Contacto</p>
-          <h2>Ponte en contacto con mi equipo si deseas resolver alguna inquietud</h2>
-          <p class="contact-intro">Cuéntanos qué necesitas. El equipo de Financial Lab te orientará sobre cursos, conferencias, talleres y mentorías.</p>
-          <div class="contact-details">
-            <div><span>Ubicación</span><p>Bogotá, Colombia.<br>Financial – LAB &amp; David Aponte</p></div>
-            <div><span>Celular</span><a href="tel:+573238402062">323 840 2062</a></div>
-            <div><span>Correo</span><a href="mailto:finanzaspersonales@financial-lab.com">finanzaspersonales@financial-lab.com</a></div>
-            <div><span>Horarios de atención</span><p>Lunes a Viernes de 8:00 a.m. a 6:00 p.m.<br>Sábados de 8:00 a.m. a 12:00 p.m.</p></div>
-          </div>
-          <div class="socials" aria-label="Redes sociales">
-            <span>SÍGUEME EN:</span>
-            <a href="https://www.tiktok.com/@davidaponte.ofici" target="_blank" rel="noopener">TikTok</a>
-            <a href="https://www.instagram.com/davidaponte.oficial/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=61568361148244" target="_blank" rel="noopener">Facebook</a>
+    <!-- MÓDULOS -->
+    <div style="margin-top:64px">
+      <p class="eyebrow reveal" style="margin-bottom:14px">Contenido del programa</p>
+      <h3 class="reveal d1" style="font-family:var(--fd);font-size:clamp(24px,3vw,38px);font-weight:400;letter-spacing:-0.025em;margin-bottom:40px;line-height:1.1">
+        4 sesiones para transformar<br>tu vida financiera
+      </h3>
+      <div class="modulos-grid stagger">
+        <div class="modulo-card">
+          <div class="modulo-img"><img src="assets/course/modulo-mentalidad-riqueza.png" alt="Módulo Mentalidad de Riqueza" loading="lazy"></div>
+          <div class="modulo-info">
+            <div class="modulo-num">Sesión 01</div>
+            <div class="modulo-title">Mentalidad de Riqueza</div>
+            <p style="font-size:13px;color:var(--text-2);margin-top:8px;line-height:1.6">Identificamos las razones por las cuales no estás generando riqueza y nos enfocamos en el cambio de mentalidad que requieres.</p>
           </div>
         </div>
-        <form class="contact-form reveal" id="contactForm">
-          <div class="form-heading"><span>Formulario de Contacto</span><b>↘</b></div>
-          <div class="field-row">
-            <label>Nombre<input type="text" name="nombre" autocomplete="given-name" required></label>
-            <label>Apellido<input type="text" name="apellido" autocomplete="family-name" required></label>
+        <div class="modulo-card">
+          <div class="modulo-img"><img src="assets/course/modulo-gestion-deudas.png" alt="Módulo Gestión de Deudas" loading="lazy"></div>
+          <div class="modulo-info">
+            <div class="modulo-num">Sesión 02</div>
+            <div class="modulo-title">Gestión de Deudas</div>
+            <p style="font-size:13px;color:var(--text-2);margin-top:8px;line-height:1.6">Estrategias efectivas para gestionar tus deudas y usar la deuda como potencializador de tus inversiones.</p>
           </div>
-          <div class="field-row">
-            <label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required></label>
-            <label>Correo Electrónico<input type="email" name="correo" autocomplete="email" required></label>
+        </div>
+        <div class="modulo-card">
+          <div class="modulo-img"><img src="assets/course/modulo-estilo-de-vida.png" alt="Módulo Estilo de Vida" loading="lazy"></div>
+          <div class="modulo-info">
+            <div class="modulo-num">Sesión 03</div>
+            <div class="modulo-title">Estilo de Vida</div>
+            <p style="font-size:13px;color:var(--text-2);margin-top:8px;line-height:1.6">Evalúa tu situación actual, identifica oportunidades y riesgos, y traza un camino hacia un futuro más estable.</p>
           </div>
-          <label>Tipo de consulta
-            <select name="tipo" required>
+        </div>
+        <div class="modulo-card">
+          <div class="modulo-img"><img src="assets/course/modulo-portafolio-inversiones.png" alt="Módulo Portafolio de Inversiones" loading="lazy"></div>
+          <div class="modulo-info">
+            <div class="modulo-num">Sesión 04</div>
+            <div class="modulo-title">Portafolio de Inversiones</div>
+            <p style="font-size:13px;color:var(--text-2);margin-top:8px;line-height:1.6">Cómo, cuándo y dónde invertir. Accede al portafolio validado por David y el Club de Inversionistas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOTOS -->
+    <div class="fotos-grid stagger" style="margin-top:48px">
+      <div class="foto-slot"><img src="assets/course/curso-foto-01.jpg" alt="Sesión del curso Transformación Financiera" loading="lazy"></div>
+      <div class="foto-slot"><img src="assets/course/curso-foto-02.jpg" alt="Estudiantes del curso con David Aponte" loading="lazy"></div>
+      <div class="foto-slot"><img src="assets/course/curso-foto-03.jpg" alt="Taller práctico de finanzas personales" loading="lazy"></div>
+      <div class="foto-slot"><img src="assets/course/curso-foto-04.jpg" alt="David Aponte en conferencia financiera" loading="lazy"></div>
+      <div class="foto-slot"><img src="assets/course/curso-foto-05.jpg" alt="Participantes del programa Transformación Financiera" loading="lazy"></div>
+      <div class="foto-slot"><img src="assets/course/curso-foto-06.jpg" alt="Mentoría financiera grupal" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VIDEOS
+     ============================================================ -->
+<section class="section-sm" style="background:var(--bg-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom:14px">Contenido</p>
+    <h2 class="reveal d1" style="font-family:var(--fd);font-size:clamp(28px,3.5vw,44px);font-weight:400;letter-spacing:-0.025em;margin-bottom:40px;line-height:1.1">
+      Mira a David en acción
+    </h2>
+    <div class="videos-grid stagger">
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/k-MkzhIgFM8"
+          title="David Aponte — Video conferencia finanzas"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/xAX6_tqWcs0"
+          title="David Aponte — Libertad financiera"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIOS
+     ============================================================ -->
+<section class="section" id="testimonios">
+  <div class="container">
+    <div class="section-header flex-between reveal">
+      <div>
+        <p class="eyebrow" style="margin-bottom:10px">Testimonios</p>
+        <h2 style="font-family:var(--fd);font-size:clamp(32px,4vw,52px);font-weight:400;letter-spacing:-0.03em;line-height:1.05">
+          Esto es lo que dicen<br>mis estudiantes
+        </h2>
+      </div>
+    </div>
+    <div class="testi-grid stagger">
+      <div class="testi-card">
+        <p class="testi-quote">Junto a David Aponte aprendimos una serie de habilidades para lograr esa Libertad Financiera que todos queremos, te invito a que puedas seguirlo y puedas aprender esos 5 tips que nos da.</p>
+        <div class="testi-author">
+          <div class="testi-av"><img src="assets/home/testimonio-jennifer-bermudez.jpeg" alt="Jennifer Bermúdez" loading="lazy"></div>
+          <div><div class="testi-name">Jennifer Bermúdez</div><div class="testi-role">A&amp;C Riesgos</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">David dictó una conferencia sobre finanzas personales y corporativas a los estudiantes del programa técnico y tecnólogo donde quedaron encantados con la charla, especialmente con la forma en que David los hizo participar.</p>
+        <div class="testi-author">
+          <div class="testi-av"><img src="assets/home/testimonio-camara-comercio-casanare.jpg" alt="Cámara de Comercio del Casanare" loading="lazy"></div>
+          <div><div class="testi-name">Deiby Cruz</div><div class="testi-role">Cámara de Comercio del Casanare</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">Su curso Transformación Financiera ha sido clave para organizar mis finanzas, aprender sobre inversiones, priorizar gastos y manejar un presupuesto eficiente. Ahora controlo mejor mis gastos y puedo comenzar a invertir.</p>
+        <div class="testi-author">
+          <div class="testi-av"><img src="assets/home/testimonio-franklin-barrera.jpg" alt="Franklin Barrera" loading="lazy"></div>
+          <div><div class="testi-name">Franklin Barrera</div><div class="testi-role">Estudiante del programa</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-grid-2 stagger" style="margin-top:16px">
+      <div class="testi-card">
+        <p class="testi-quote">David entiende como pocos la realidad nacional. Se nota que le apasiona la enseñanza y el bienestar de sus alumnos. Al hacer el curso recibí mucho más del dinero que invertí. Ahora soy consciente de cómo puedo llegar mucho más rápido al camino de prosperidad.</p>
+        <div class="testi-author">
+          <div class="testi-av"><img src="assets/home/testimonio-reinaldo-acosta.png" alt="Reinaldo Acosta" loading="lazy"></div>
+          <div><div class="testi-name">Reinaldo Acosta</div><div class="testi-role">Estudiante del programa</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">La decisión de tomar el curso de finanzas con David Aponte ha sido una de las mejores decisiones e inversiones. Realmente fue un proceso enriquecedor que me brindó las herramientas necesarias para mi organización financiera actual y para tomar las riendas de mi futuro.</p>
+        <div class="testi-author">
+          <div class="testi-av"><img src="assets/home/testimonio-maria-del-pilar.png" alt="María del Pilar" loading="lazy"></div>
+          <div><div class="testi-name">María del Pilar Pineda</div><div class="testi-role">Fundadora de Conectar Seguros Ltda</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BAND
+     ============================================================ -->
+<div class="cta-band">
+  <div class="cta-band-inner">
+    <div class="cta-badge reveal"><div class="cta-badge-dot" aria-hidden="true"></div>Financial Lab · Bogotá, Colombia</div>
+    <h2 class="cta-main-title reveal d1">
+      Libertad<br><em>Financiera</em>
+    </h2>
+    <p class="cta-sub reveal d2">Hacemos viables tus metas financieras</p>
+    <div class="cta-marquee-wrap" aria-hidden="true">
+      <div class="cta-marquee">
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+        <span class="cta-marquee-item">Transformación Financiera<span class="cta-sep"></span></span>
+      </div>
+    </div>
+    <div class="cta-actions reveal">
+      <a href="#curso" class="btn-primary">Accede al curso ¡ahora! ↗</a>
+      <a href="#contacto" class="btn-ghost">Hablar con el equipo</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-l">
+        <p class="eyebrow" style="margin-bottom:14px">Contacto</p>
+        <h2 class="contact-title">
+          Ponte en contacto<br>con <em>mi equipo</em>
+        </h2>
+        <p style="font-size:15px;color:var(--text-2);line-height:1.7;margin-bottom:8px">Si deseas resolver alguna inquietud sobre los servicios, el curso o una conferencia corporativa, estamos disponibles para atenderte.</p>
+
+        <div class="contact-meta">
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon" aria-hidden="true">📱</div>
+            <a href="tel:+573238402062">323 840 2062</a>
+          </div>
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon" aria-hidden="true">✉️</div>
+            <a href="mailto:finanzaspersonales@financial-lab.com">finanzaspersonales@financial-lab.com</a>
+          </div>
+          <div class="contact-meta-item">
+            <div class="contact-meta-icon" aria-hidden="true">📍</div>
+            Bogotá, Colombia
+          </div>
+        </div>
+
+        <div class="contact-horario">
+          <strong style="color:var(--text);display:block;margin-bottom:4px">Horarios de atención</strong>
+          Lunes a Viernes: 8:00 a.m – 6:00 p.m<br>
+          Sábados: 8:00 a.m – 12:00 p.m
+        </div>
+
+        <div class="contact-social">
+          <a href="https://www.tiktok.com/@davidapontefinanciero" target="_blank" rel="noopener" class="social-btn">TikTok</a>
+          <a href="https://www.instagram.com/david.aponte.financiero" target="_blank" rel="noopener" class="social-btn">Instagram</a>
+          <a href="https://www.facebook.com/people/David-Aponte-Financiero/61551432777625/" target="_blank" rel="noopener" class="social-btn">Facebook</a>
+        </div>
+      </div>
+
+      <div class="reveal d1">
+        <form class="contact-form" onsubmit="handleForm(event)" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required minlength="2">
+            </div>
+            <div class="form-field">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+            </div>
+            <div class="form-field">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="tipo">Tipo de consulta</label>
+            <select id="tipo" name="tipo">
               <option value="">Selecciona una opción</option>
-              <option>Deseo Hablar con un Asesor</option>
+              <option>Deseo hablar con un asesor</option>
               <option>Cotización</option>
               <option>Solicitud</option>
               <option>Felicitaciones</option>
               <option>Queja</option>
               <option>Reclamo</option>
             </select>
-          </label>
-          <label>Tu mensaje<textarea name="mensaje" rows="5" required></textarea></label>
-          <button class="button button--light form-submit" type="submit">Enviar Formulario <span>↗</span></button>
-          <p class="form-note" id="formNote" aria-live="polite">El formulario abrirá tu aplicación de correo con la información diligenciada.</p>
+          </div>
+          <div class="form-field">
+            <label for="mensaje">Tu mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte…"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center">
+            Enviar formulario ↗
+          </button>
+          <div id="form-ok" style="display:none;text-align:center;font-size:14px;color:var(--green);padding:12px">
+            ✓ Mensaje enviado. Nos pondremos en contacto pronto.
+          </div>
         </form>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container-wide footer-main">
-      <div><p class="footer-name">David Aponte</p><p>Conferencista y coach en finanzas personales y corporativas.</p></div>
-      <div><span>Navegación</span><a href="#sobre-david">David</a><a href="#servicios">Servicios</a><a href="#eventos">Eventos</a><a href="#curso">Curso</a><a href="#contacto">Contacto</a></div>
-      <div><span>Contacto</span><a href="tel:+573238402062">323 840 2062</a><a href="mailto:finanzaspersonales@financial-lab.com">Correo electrónico</a><a href="https://wa.me/573238402062" target="_blank" rel="noopener">WhatsApp</a></div>
-      <div><span>Aviso legal</span><a href="https://www.davidaponte.com/contactenos/" target="_blank" rel="noopener">Tratamiento de datos</a><a href="https://www.davidaponte.com/contactenos/" target="_blank" rel="noopener">Términos y condiciones</a></div>
     </div>
-    <div class="container-wide footer-bottom"><span>© <span id="year"></span> David Aponte · Financial Lab</span><a href="#inicio">Volver arriba ↑</a></div>
-  </footer>
+  </div>
+</section>
 
-  <a class="whatsapp-float" href="https://wa.me/573238402062?text=Hola%2C%20quisiera%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20David%20Aponte" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp">WhatsApp <span>↗</span></a>
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">David Aponte</div>
+        <div class="footer-sub">Financial Lab · CEO</div>
+        <p class="footer-tagline">Conferencista y Coach en Finanzas Personales y Corporativas. Transformamos la vida financiera de las personas.</p>
+        <div class="footer-social">
+          <a href="https://www.tiktok.com/@davidapontefinanciero" target="_blank" rel="noopener" class="social-btn" aria-label="TikTok">TT</a>
+          <a href="https://www.instagram.com/david.aponte.financiero" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/people/David-Aponte-Financiero/61551432777625/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <ul class="footer-links">
+          <li><a href="#about">Sobre David</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#curso">Curso</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Servicios</div>
+        <ul class="footer-links">
+          <li><a href="#servicios">Talleres interactivos</a></li>
+          <li><a href="#servicios">Conferencias corporativas</a></li>
+          <li><a href="#servicios">Mentoría financiera</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <ul class="footer-links">
+          <li><a href="tel:+573238402062">323 840 2062</a></li>
+          <li><a href="mailto:finanzaspersonales@financial-lab.com">finanzaspersonales@<br>financial-lab.com</a></li>
+          <li><a href="#contacto">Bogotá, Colombia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 David Aponte · Financial Lab · Bogotá, Colombia</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
-  <script src="main.js" defer></script>
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+(() => {
+  'use strict';
+
+  const clamp  = v => Math.max(0, Math.min(1, v));
+  const smooth = (v, a, b) => { const t = clamp((v-a)/(b-a)); return t*t*(3-2*t); };
+  const desktop = matchMedia('(min-width:769px)');
+  const reduced = matchMedia('(prefers-reduced-motion:reduce)');
+
+  /* ── Nav ── */
+  const nav = document.getElementById('nav');
+  const onScroll = () => nav.classList.toggle('scrolled', scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ── Mobile menu ── */
+  const burger    = document.getElementById('burger');
+  const navMobile = document.getElementById('navMobile');
+  burger.addEventListener('click', () => {
+    const open = navMobile.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  window.closeMenu = () => {
+    navMobile.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  };
+
+  /* ── Reveal observer ── */
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      revealObs.unobserve(e.target);
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -18% 0px' });
+
+  document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.reveal-s').forEach(el => {
+    if (!el.closest('.scroll-scene')) revealObs.observe(el);
+  });
+
+  /* ── Stagger observer ── */
+  const staggerObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('in');
+      staggerObs.unobserve(e.target);
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -14% 0px' });
+
+  document.querySelectorAll('.stagger').forEach(el => {
+    if (!el.closest('.scroll-scene')) staggerObs.observe(el);
+  });
+
+  /* ── Marquee pause offscreen ── */
+  const marqueeObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      e.target.style.animationPlayState = e.isIntersecting ? 'running' : 'paused';
+    });
+  });
+  document.querySelectorAll('.ticker-track,.cta-marquee').forEach(el => marqueeObs.observe(el));
+
+  /* ── Form ── */
+  window.handleForm = e => {
+    e.preventDefault();
+    const ok = document.getElementById('form-ok');
+    ok.style.display = 'block';
+    e.target.reset();
+    setTimeout(() => { ok.style.display = 'none'; }, 5000);
+  };
+
+  /* ── Sticky scroll scenes ── */
+  if (reduced.matches || !desktop.matches) return;
+
+  /* helpers */
+  const set = (el, o, y=0) => {
+    if (!el) return;
+    el.style.opacity   = o.toFixed(4);
+    el.style.transform = `translate3d(0,${y.toFixed(2)}px,0)`;
+  };
+  const setC = (el, o, y=0) => {
+    if (!el) return;
+    el.style.opacity   = o.toFixed(4);
+    el.style.transform = `translate3d(0,calc(-44% + ${y.toFixed(2)}px),0)`;
+  };
+  const setCC = (el, o, y=0) => {
+    if (!el) return;
+    el.style.opacity   = o.toFixed(4);
+    el.style.transform = `translate3d(0,calc(-50% + ${y.toFixed(2)}px),0)`;
+  };
+
+  /* scene elements */
+  const enfoque     = document.getElementById('enfoque');
+  const eEyebrow    = enfoque?.querySelector('.enfoque-inner > .eyebrow');
+  const eTitle      = enfoque?.querySelector('.enfoque-title');
+  const eCard1      = document.getElementById('enfoque-card-1');
+  const eCard2      = document.getElementById('enfoque-card-2');
+
+  const servicios   = document.getElementById('servicios');
+  const sEyebrow    = servicios?.querySelector('.servicios-inner > .eyebrow');
+  const sTitle      = servicios?.querySelector('.serv-title');
+  const sCard1      = document.getElementById('serv-card-1');
+  const sCard2      = document.getElementById('serv-card-2');
+  const sCard3      = document.getElementById('serv-card-3');
+
+  const scenes = [enfoque, servicios].filter(Boolean).map(el => ({ el, top:0, h:1 }));
+
+  function cache() {
+    scenes.forEach(s => {
+      s.top = s.el.getBoundingClientRect().top + scrollY;
+      s.h   = Math.max(1, s.el.offsetHeight - innerHeight);
+    });
+    render();
+  }
+
+  function prog(s) { return clamp((scrollY - s.top) / s.h); }
+
+  function renderEnfoque(p) {
+    const eyeIn  = smooth(p, .08, .18);
+    const eyeOut = smooth(p, .90, .98);
+    set(eEyebrow, eyeIn*(1-eyeOut), (1-eyeIn)*6);
+    set(eTitle,   eyeIn*(1-eyeOut), (1-eyeIn)*6 - eyeOut*4);
+
+    const c1In  = smooth(p, .14, .28); const c1Out = smooth(p, .50, .65);
+    setCC(eCard1, c1In*(1-c1Out), (1-c1In)*10 - c1Out*8);
+
+    const c2In  = smooth(p, .58, .74); const c2Out = smooth(p, .92, .99);
+    setCC(eCard2, c2In*(1-c2Out), (1-c2In)*10 - c2Out*8);
+  }
+
+  function renderServicios(p) {
+    const eyeIn  = smooth(p, .06, .16);
+    const eyeOut = smooth(p, .92, .99);
+    set(sEyebrow, eyeIn*(1-eyeOut), (1-eyeIn)*6);
+    set(sTitle,   eyeIn*(1-eyeOut), (1-eyeIn)*6 - eyeOut*4);
+
+    const s1In  = smooth(p, .12, .26); const s1Out = smooth(p, .38, .52);
+    setC(sCard1, s1In*(1-s1Out), (1-s1In)*10 - s1Out*8);
+
+    const s2In  = smooth(p, .44, .58); const s2Out = smooth(p, .66, .80);
+    setC(sCard2, s2In*(1-s2Out), (1-s2In)*10 - s2Out*8);
+
+    const s3In  = smooth(p, .72, .86); const s3Out = smooth(p, .94, 1.0);
+    setC(sCard3, s3In*(1-s3Out), (1-s3In)*10 - s3Out*8);
+  }
+
+  let pending = false;
+  function render() {
+    pending = false;
+    onScroll();
+    if (scenes[0]) renderEnfoque(prog(scenes[0]));
+    if (scenes[1]) renderServicios(prog(scenes[1]));
+  }
+  function schedule() { if (!pending) { pending = true; requestAnimationFrame(render); } }
+
+  window.addEventListener('scroll', schedule, { passive: true });
+  window.addEventListener('resize', cache,    { passive: true });
+  window.addEventListener('load',   cache,    { once: true });
+  document.fonts?.ready.then(cache);
+  cache();
+
+})();
+</script>
 </body>
 </html>
